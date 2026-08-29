@@ -601,14 +601,62 @@
       .accordion-content h4 { color: #06b6d4 !important; }
 
       /* ===== SAFARI / iOS CHECKMARK & TEXT COLOR FIX ===== */
-      .accordion-content li { color: #cbd5e1 !important; -webkit-text-fill-color: #cbd5e1 !important; }
-      .accordion-content p  { color: #cbd5e1 !important; -webkit-text-fill-color: #cbd5e1 !important; }
-      .accordion-content h4 { color: #06b6d4 !important; -webkit-text-fill-color: #06b6d4 !important; }
-      .accordion-content li span[style*="4ade80"] { color: #e2e8f0 !important; -webkit-text-fill-color: #e2e8f0 !important; }
-      .text-textPrimary   { color: #f1f5f9 !important; -webkit-text-fill-color: #f1f5f9 !important; }
-      .text-textSecondary { color: #cbd5e1 !important; -webkit-text-fill-color: #cbd5e1 !important; }
-      .text-accent        { color: #06b6d4 !important; -webkit-text-fill-color: #06b6d4 !important; }
-      .text-green-400     { color: #e2e8f0 !important; -webkit-text-fill-color: #e2e8f0 !important; }
+/* ===== SAFARI / iOS CHECKMARK & TEXT COLOR FIX ===== */
+
+/* Your existing color overrides */
+.accordion-content li { 
+    color: #cbd5e1 !important; 
+    -webkit-text-fill-color: #cbd5e1 !important; 
+}
+.accordion-content p  { 
+    color: #cbd5e1 !important; 
+    -webkit-text-fill-color: #cbd5e1 !important; 
+}
+.accordion-content h4 { 
+    color: #06b6d4 !important; 
+    -webkit-text-fill-color: #06b6d4 !important; 
+}
+.accordion-content li span[style*="4ade80"] { 
+    color: #e2e8f0 !important; 
+    -webkit-text-fill-color: #e2e8f0 !important; 
+}
+.text-textPrimary   { 
+    color: #f1f5f9 !important; 
+    -webkit-text-fill-color: #f1f5f9 !important; 
+}
+.text-textSecondary { 
+    color: #cbd5e1 !important; 
+    -webkit-text-fill-color: #cbd5e1 !important; 
+}
+.text-accent        { 
+    color: #06b6d4 !important; 
+    -webkit-text-fill-color: #06b6d4 !important; 
+}
+.text-green-400     { 
+    color: #e2e8f0 !important; 
+    -webkit-text-fill-color: #e2e8f0 !important; 
+}
+
+/* ===== iOS CHECKMARK FIX (THIS IS THE PART YOU WERE MISSING) ===== */
+
+/* Force white checkmarks on iPhone — bypasses emoji rendering */
+.accordion-content li {
+    position: relative;
+    padding-left: 1.5rem; /* space for checkmark */
+}
+
+.accordion-content li::before {
+    content: "✔";                 /* your checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff !important;    /* force white */
+    font-weight: 700;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* ===== END SAFARI / iOS FIX ===== */
+
       /* ===== END SAFARI / iOS FIX ===== */
     </style>
 </head>
