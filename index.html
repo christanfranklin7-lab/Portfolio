@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Product Leadership & Analytics Impact Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Product Leadership &amp; Analytics Impact Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -27,11 +28,11 @@
       },
     };
     </script>
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <style>
+<script defer="" src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
       :root {
         --bg-base: #333399;
         --bg-alt: #2a2d80;
@@ -554,559 +555,535 @@
         border-bottom-color: #22d3ee;
       }
 
-      /* ===== GITHUB PAGES FIX: Explicit colors for Featured Initiatives ===== */
-      #portfolio h2,
-      #portfolio h3,
-      #portfolio h4 { color: #f1f5f9 !important; }
-
-      #portfolio p,
-      #portfolio li,
-      #portfolio .text-textSecondary,
-      #portfolio [class*="textSecondary"] { color: #cbd5e1 !important; }
-
-      #portfolio .text-textPrimary,
-      #portfolio [class*="textPrimary"] { color: #f1f5f9 !important; }
-
-      #portfolio .text-accent,
-      #portfolio [class*="text-accent"] { color: #06b6d4 !important; }
-
-      #portfolio .accordion-content p,
-      #portfolio .accordion-content li,
-      #portfolio .accordion-content span:not(.tag) { color: #cbd5e1 !important; }
-
-      #portfolio .accordion-content h4 { color: #06b6d4 !important; }
-
-      /* Ensure all sections use correct text colors */
-      #about p, #about li, #about .text-textSecondary { color: #cbd5e1 !important; }
-      #about h2, #about h3, #about h4, #about .text-textPrimary { color: #f1f5f9 !important; }
-      #expertise p, #expertise li, #expertise .text-textSecondary { color: #cbd5e1 !important; }
-      #expertise h2, #expertise h3, #expertise h4, #expertise .text-textPrimary { color: #f1f5f9 !important; }
-      #impact p, #impact li, #impact .text-textSecondary { color: #cbd5e1 !important; }
-      #impact h2, #impact h3, #impact .text-textPrimary { color: #f1f5f9 !important; }
-      #recognition p, #recognition li, #recognition .text-textSecondary { color: #cbd5e1 !important; }
-      #recognition h2, #recognition h3, #recognition h4, #recognition .text-textPrimary { color: #f1f5f9 !important; }
-      #contact p, #contact li, #contact .text-textSecondary { color: #cbd5e1 !important; }
-      #contact h2, #contact h3, #contact .text-textPrimary { color: #f1f5f9 !important; }
-
-      /* Body default text */
-      body { color: #f1f5f9 !important; }
-      /* ===== END GITHUB PAGES FIX ===== */
+      /* Portfolio card header icons */
+      .portfolio-header-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px solid rgba(99,102,241,0.25);
+        box-shadow: 0 0 16px rgba(99,102,241,0.12);
+        transition: all var(--transition);
+      }
+      .portfolio-header-icon.icon-cloud {
+        background: linear-gradient(135deg, rgba(6,182,212,0.18), rgba(99,102,241,0.18));
+        border-color: rgba(6,182,212,0.3);
+      }
+      .portfolio-header-icon.icon-data {
+        background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(139,92,246,0.18));
+        border-color: rgba(139,92,246,0.3);
+      }
+      .portfolio-header-icon.icon-chart {
+        background: linear-gradient(135deg, rgba(139,92,246,0.18), rgba(6,182,212,0.18));
+        border-color: rgba(6,182,212,0.3);
+      }
+      [data-accordion]:hover .portfolio-header-icon {
+        box-shadow: 0 0 24px rgba(99,102,241,0.25);
+        border-color: rgba(99,102,241,0.5);
+      }
 
       /* ===== STATIC DEPLOYMENT FIX: Explicit Tailwind custom color classes ===== */
-      .text-textPrimary  { color: #f1f5f9 !important; }
+      .text-textPrimary   { color: #f1f5f9 !important; }
       .text-textSecondary { color: #cbd5e1 !important; }
-      .text-accent       { color: #06b6d4 !important; }
-      .text-indigo       { color: #6366f1 !important; }
-      .text-violet       { color: #8b5cf6 !important; }
-      .border-border     { border-color: rgba(255,255,255,0.15) !important; }
-      .bg-surface        { background: rgba(255,255,255,0.08) !important; }
-      /* Ensure all body text defaults to light on dark background */
-      body, p, li, span, div { color: inherit; }
-      body { color: #f1f5f9; }
+      .text-accent        { color: #06b6d4 !important; }
+      .text-indigo        { color: #6366f1 !important; }
+      .text-violet        { color: #8b5cf6 !important; }
+      .border-border      { border-color: rgba(255,255,255,0.15) !important; }
+      .bg-surface         { background: rgba(255,255,255,0.08) !important; }
+      body                { color: #f1f5f9; }
       /* ===== END STATIC DEPLOYMENT FIX ===== */
     </style>
 </head>
 <body data-id="0">
-    <app-icon data-id="1" hidden data-icon="brain" data-palette="Dark"></app-icon>
-
-    <!-- Toast -->
-    <div data-id="2" id="toast-msg" class="toast"></div>
-
-    <!-- Back to Top -->
-    <button data-id="3" id="back-to-top" aria-label="Back to top">
-        <i data-id="4" data-lucide="arrow-up" class="w-5 h-5"></i>
-    </button>
-
-    <!-- Mobile Menu Overlay -->
-    <div data-id="5" id="mobile-menu-overlay">
-        <button data-id="6" id="mobile-close-btn" class="absolute top-6 right-6 p-3 text-textPrimary" aria-label="Close menu">
-            <i data-id="7" data-lucide="x" class="w-7 h-7"></i>
-        </button>
-        <a data-id="8" href="#about" class="mobile-nav-link" data-mobile-nav>About</a>
-        <a data-id="9" href="#expertise" class="mobile-nav-link" data-mobile-nav>Expertise</a>
-        <a data-id="10" href="#impact" class="mobile-nav-link" data-mobile-nav>Impact</a>
-        <a data-id="11" href="#portfolio" class="mobile-nav-link" data-mobile-nav>Portfolio</a>
-        <a data-id="12" href="#recognition" class="mobile-nav-link" data-mobile-nav>Recognition</a>
-        <a data-id="13" href="#contact" class="mobile-nav-link" data-mobile-nav>Contact</a>
-    </div>
-
-    <!-- Navigation -->
-    <nav data-id="14" id="main-nav">
-        <div data-id="15" class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
-            <a data-id="16" href="#hero" class="text-lg font-bold gradient-text tracking-tight">CF</a>
-            <div data-id="17" class="hidden md:flex items-center gap-1">
-                <a data-id="18" href="#about" class="nav-link" data-nav-link>About</a>
-                <a data-id="19" href="#expertise" class="nav-link" data-nav-link>Expertise</a>
-                <a data-id="20" href="#impact" class="nav-link" data-nav-link>Impact</a>
-                <a data-id="21" href="#portfolio" class="nav-link" data-nav-link>Portfolio</a>
-                <a data-id="22" href="#recognition" class="nav-link" data-nav-link>Recognition</a>
-            </div>
-            <div data-id="23" class="hidden md:block">
-                <button data-id="24" id="resume-btn-desk" class="btn-pill btn-secondary text-sm">
-                    <i data-id="25" data-lucide="download" class="w-4 h-4"></i>
+<app-icon data-icon="brain" data-id="1" data-palette="Dark" hidden=""></app-icon>
+<!-- Toast -->
+<div class="toast" data-id="2" id="toast-msg"></div>
+<!-- Back to Top -->
+<button aria-label="Back to top" data-id="3" id="back-to-top">
+<span style="font-style:normal; line-height:1; display:inline-block;">▲</span>
+</button>
+<!-- Mobile Menu Overlay -->
+<div data-id="5" id="mobile-menu-overlay">
+<button aria-label="Close menu" class="absolute top-6 right-6 p-3 text-textPrimary" data-id="6" id="mobile-close-btn" style="color:#f1f5f9 !important;">
+<span style="font-style:normal; line-height:1; display:inline-block;">✕</span>
+</button>
+<a class="mobile-nav-link" data-id="8" data-mobile-nav="" href="#about">About</a>
+<a class="mobile-nav-link" data-id="9" data-mobile-nav="" href="#expertise">Expertise</a>
+<a class="mobile-nav-link" data-id="10" data-mobile-nav="" href="#impact">Impact</a>
+<a class="mobile-nav-link" data-id="11" data-mobile-nav="" href="#portfolio">Portfolio</a>
+<a class="mobile-nav-link" data-id="12" data-mobile-nav="" href="#recognition">Recognition</a>
+<a class="mobile-nav-link" data-id="13" data-mobile-nav="" href="#contact">Contact</a>
+</div>
+<!-- Navigation -->
+<nav data-id="14" id="main-nav">
+<div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between" data-id="15">
+<a class="text-lg font-bold gradient-text tracking-tight" data-id="16" href="#hero">CF</a>
+<div class="hidden md:flex items-center gap-1" data-id="17">
+<a class="nav-link" data-id="18" data-nav-link="" href="#about">About</a>
+<a class="nav-link" data-id="19" data-nav-link="" href="#expertise">Expertise</a>
+<a class="nav-link" data-id="20" data-nav-link="" href="#impact">Impact</a>
+<a class="nav-link" data-id="21" data-nav-link="" href="#portfolio">Portfolio</a>
+<a class="nav-link" data-id="22" data-nav-link="" href="#recognition">Recognition</a>
+</div>
+<div class="hidden md:block" data-id="23">
+<button class="btn-pill btn-secondary text-sm" data-id="24" id="resume-btn-desk">
+<span style="font-style:normal; line-height:1; display:inline-block;">●</span>
                     Download Resume
                 </button>
-            </div>
-            <button data-id="26" id="mobile-menu-btn" class="md:hidden p-2 text-textPrimary" aria-label="Open menu">
-                <i data-id="27" data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-    </nav>
-
-    <main data-id="28">
-        <!-- HERO SECTION -->
-        <section data-id="29" id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <canvas data-id="30" id="particle-canvas"></canvas>
-            <div data-id="31" class="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto">
-                <!-- Name Badge -->
-                <div data-id="32" class="mb-8 flex justify-center">
-                    <div data-id="33" class="glow-ring">
-                        <div data-id="34" class="px-6 py-2 rounded-full border border-border text-sm font-semibold tracking-wider text-textSecondary flex items-center gap-2 shadow-sm" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);">
-                            <i data-id="35" data-lucide="sparkles" class="w-4 h-4 text-accent"></i>
+</div>
+<button aria-label="Open menu" class="md:hidden p-2 text-textPrimary" data-id="26" id="mobile-menu-btn" style="color:#f1f5f9 !important;">
+<span style="font-style:normal; line-height:1; display:inline-block;">☰</span>
+</button>
+</div>
+</nav>
+<main data-id="28">
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden" data-id="29" id="hero">
+<canvas data-id="30" id="particle-canvas"></canvas>
+<div class="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto" data-id="31">
+<!-- Name Badge -->
+<div class="mb-8 flex justify-center" data-id="32">
+<div class="glow-ring" data-id="33">
+<div class="px-6 py-2 rounded-full border border-border text-sm font-semibold tracking-wider text-textSecondary flex items-center gap-2 shadow-sm" data-id="34" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); color:#cbd5e1 !important;">
+<span style="font-style:normal; line-height:1; display:inline-block;">●</span>
                             Christan Franklin
                         </div>
-                    </div>
-                </div>
-
-                <!-- Headline -->
-                <h1 data-id="36" id="hero-headline" class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 gradient-text" style="line-height:1.1;">
-                </h1>
-
-                <!-- Subheadline -->
-                <p data-id="37" class="text-lg md:text-xl text-textSecondary mb-10 max-w-2xl mx-auto opacity-0" id="hero-sub" style="transition: opacity 1s ease 1.5s;">
+</div>
+</div>
+<!-- Headline -->
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 gradient-text" data-id="36" id="hero-headline" style="line-height:1.1;">
+</h1>
+<!-- Subheadline -->
+<p class="text-lg md:text-xl text-textSecondary mb-10 max-w-2xl mx-auto opacity-0" data-id="37" id="hero-sub" style="transition: opacity 1s ease 1.5s; color:#cbd5e1 !important;">
                     Turning Complex Data Needs into Cloud Products That Drive Decisions
                 </p>
-
-                <!-- CTAs -->
-                <div data-id="38" class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 opacity-0" id="hero-ctas" style="transition: opacity 1s ease 2s;">
-                    <a data-id="39" href="#impact" class="btn-pill btn-primary">
-                        <i data-id="40" data-lucide="trending-up" class="w-4 h-4"></i>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 opacity-0" data-id="38" id="hero-ctas" style="transition: opacity 1s ease 2s;">
+<a class="btn-pill btn-primary" data-id="39" href="#impact">
+<span style="font-style:normal; line-height:1; display:inline-block;">📈</span>
                         View My Impact
                     </a>
-                    <a data-id="41" href="#portfolio" class="btn-pill btn-secondary">
-                        <i data-id="42" data-lucide="briefcase" class="w-4 h-4"></i>
+<a class="btn-pill btn-secondary" data-id="41" href="#portfolio">
+<span style="font-style:normal; line-height:1; display:inline-block;">💼</span>
                         Explore Work
                     </a>
-                </div>
-
-                <!-- Floating Stats -->
-                <div data-id="43" class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 opacity-0" id="hero-stats" style="transition: opacity 1s ease 2.5s;">
-                    <div data-id="44" class="floating-stat glass-card px-6 py-4 text-center cursor-default" style="transform:none;">
-                        <div data-id="45" class="text-2xl md:text-3xl font-black gradient-text" data-hero-counter data-target="28" data-suffix="+">0+</div>
-                        <div data-id="46" class="text-xs text-textSecondary mt-1">Years of Technology Experience</div>
-                    </div>
-                    <div data-id="47" class="floating-stat glass-card px-6 py-4 text-center cursor-default" style="transform:none;">
-                        <div data-id="48" class="text-2xl md:text-3xl font-black gradient-text" data-hero-counter data-target="15" data-prefix="$" data-suffix="M">$0M</div>
-                        <div data-id="49" class="text-xs text-textSecondary mt-1">Projected Annual Savings — Transition of Care Product</div>
-                    </div>
-                    <div data-id="50" class="floating-stat glass-card px-6 py-4 text-center cursor-default" style="transform:none;">
-                        <div data-id="51" class="text-2xl md:text-3xl font-black gradient-text" data-hero-counter data-target="98" data-suffix="%">0%</div>
-                        <div data-id="52" class="text-xs text-textSecondary mt-1">On-Time Delivery — Data Warehouse Project</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Scroll indicator -->
-            <div data-id="53" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-textSecondary text-xs opacity-0" id="scroll-hint" style="transition: opacity 1s ease 3s;">
-                <span data-id="54">Scroll to explore</span>
-                <i data-id="55" data-lucide="chevron-down" class="w-5 h-5 animate-bounce"></i>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section data-id="56" id="about" class="py-20 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
-            <div data-id="57" class="reveal">
-                <div data-id="58" class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-                    <!-- Left: Avatar -->
-                    <div data-id="59" class="flex-shrink-0 flex justify-center">
-                        <div data-id="60" class="glow-ring">
-                            <div data-id="61" class="avatar-circle">
+</div>
+<!-- Floating Stats -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 opacity-0" data-id="43" id="hero-stats" style="transition: opacity 1s ease 2.5s;">
+<div class="floating-stat glass-card px-6 py-4 text-center cursor-default" data-id="44" style="transform:none;">
+<div class="text-2xl md:text-3xl font-black gradient-text" data-hero-counter="" data-id="45" data-suffix="+" data-target="28">0+</div>
+<div class="text-xs text-textSecondary mt-1" data-id="46" style="color:#cbd5e1 !important;">Years of Technology Experience</div>
+</div>
+<div class="floating-stat glass-card px-6 py-4 text-center cursor-default" data-id="47" style="transform:none;">
+<div class="text-2xl md:text-3xl font-black gradient-text" data-hero-counter="" data-id="48" data-prefix="$" data-suffix="M" data-target="15">$0M</div>
+<div class="text-xs text-textSecondary mt-1" data-id="49" style="color:#cbd5e1 !important;">Projected Annual Savings — Transition of Care Product</div>
+</div>
+<div class="floating-stat glass-card px-6 py-4 text-center cursor-default" data-id="50" style="transform:none;">
+<div class="text-2xl md:text-3xl font-black gradient-text" data-hero-counter="" data-id="51" data-suffix="%" data-target="98">0%</div>
+<div class="text-xs text-textSecondary mt-1" data-id="52" style="color:#cbd5e1 !important;">On-Time Delivery — Data Warehouse Project</div>
+</div>
+</div>
+</div>
+<!-- Scroll indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-textSecondary text-xs opacity-0" data-id="53" id="scroll-hint" style="transition: opacity 1s ease 3s; color:#cbd5e1 !important;">
+<span data-id="54">Scroll to explore</span>
+<span style="font-style:normal; line-height:1; display:inline-block;">▼</span>
+</div>
+</section>
+<!-- ABOUT SECTION -->
+<section class="py-20 md:py-32 px-4 md:px-8 max-w-7xl mx-auto" data-id="56" id="about">
+<div class="reveal" data-id="57">
+<div class="flex flex-col md:flex-row items-center gap-12 md:gap-16" data-id="58">
+<!-- Left: Avatar -->
+<div class="flex-shrink-0 flex justify-center" data-id="59">
+<div class="glow-ring" data-id="60">
+<div class="avatar-circle" data-id="61">
                                 CF
                             </div>
-                        </div>
-                    </div>
-                    <!-- Right: Bio -->
-                    <div data-id="62" class="flex-1 text-center md:text-left">
-                        <h2 data-id="63" class="text-3xl md:text-4xl font-bold mb-2 gradient-text">About Me</h2>
-                        <div data-id="64" class="section-divider mx-auto md:mx-0 mb-6" style="margin-top:8px;"></div>
-                        <p data-id="65" class="text-textSecondary leading-relaxed text-base md:text-lg max-w-2xl">
+</div>
+</div>
+<!-- Right: Bio -->
+<div class="flex-1 text-center md:text-left" data-id="62">
+<h2 class="text-3xl md:text-4xl font-bold mb-2 gradient-text" data-id="63">About Me</h2>
+<div class="section-divider mx-auto md:mx-0 mb-6" data-id="64" style="margin-top:8px;"></div>
+<p class="text-textSecondary leading-relaxed text-base md:text-lg max-w-2xl" data-id="65" style="color:#cbd5e1 !important;">
                             I'm a senior product management and business analysis leader with deep expertise in cloud data products, BI reporting, and analytics delivery. At Optum, I serve as the primary liaison between business stakeholders, data warehouse teams, and the data governance office — translating business objectives into cloud data sets on Azure Databricks and Snowflake that power real decisions. I bring 28+ years of experience across healthcare technology, retail, energy, and media — delivering dashboards, KPI frameworks, and data governance practices that align strategy with measurable outcomes.
                         </p>
-                    </div>
-                </div>
-
-                <!-- Value Props -->
-                <div data-id="66" class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
-                    <div data-id="67" class="glass-card p-6 text-center cursor-default" style="transform:none;">
-                        <div data-id="68" class="value-icon mx-auto mb-4">
-                            <i data-id="69" data-lucide="bar-chart-3" class="w-6 h-6 text-indigo"></i>
-                        </div>
-                        <h3 data-id="70" class="font-bold text-lg mb-2 text-textPrimary">Cloud Data Products</h3>
-                        <p data-id="71" class="text-textSecondary text-sm">Designing and delivering cloud-based data sets and reporting solutions that power enterprise analytics.</p>
-                    </div>
-                    <div data-id="72" class="glass-card p-6 text-center cursor-default" style="transform:none;">
-                        <div data-id="73" class="value-icon mx-auto mb-4">
-                            <i data-id="74" data-lucide="database" class="w-6 h-6 text-violet"></i>
-                        </div>
-                        <h3 data-id="75" class="font-bold text-lg mb-2 text-textPrimary">Azure Databricks & Snowflake</h3>
-                        <p data-id="76" class="text-textSecondary text-sm">Building cloud data architecture on Azure Databricks and Snowflake to enable scalable analytics and data-ready infrastructure.</p>
-                    </div>
-                    <div data-id="77" class="glass-card p-6 text-center cursor-default" style="transform:none;">
-                        <div data-id="78" class="value-icon mx-auto mb-4">
-                            <i data-id="79" data-lucide="target" class="w-6 h-6 text-accent"></i>
-                        </div>
-                        <h3 data-id="80" class="font-bold text-lg mb-2 text-textPrimary">KPI-Driven Analytics</h3>
-                        <p data-id="81" class="text-textSecondary text-sm">Defining KPI frameworks and dashboards that give leadership the visibility to make confident, data-driven decisions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERTISE SECTION -->
-        <section data-id="82" id="expertise" class="py-20 md:py-32 px-4 md:px-8">
-            <div data-id="83" class="max-w-7xl mx-auto reveal">
-                <div data-id="84" class="text-center mb-12">
-                    <h2 data-id="85" class="text-3xl md:text-4xl font-bold gradient-text mb-2">Core Competencies</h2>
-                    <div data-id="86" class="section-divider"></div>
-                </div>
-
-                <!-- Tabs -->
-                <div data-id="87" class="flex flex-wrap justify-center gap-3 mb-10">
-                    <button data-id="88" class="tab-btn-custom active" data-expertise-tab="product">
-                        <span data-id="89" class="flex items-center gap-2"><i data-id="90" data-lucide="layout-dashboard" class="w-4 h-4"></i> Product Management</span>
-                    </button>
-                    <button data-id="91" class="tab-btn-custom" data-expertise-tab="data">
-                        <span data-id="92" class="flex items-center gap-2"><i data-id="93" data-lucide="database" class="w-4 h-4"></i> Data & Analytics</span>
-                    </button>
-                    <button data-id="94" class="tab-btn-custom" data-expertise-tab="ba">
-                        <span data-id="95" class="flex items-center gap-2"><i data-id="96" data-lucide="file-text" class="w-4 h-4"></i> Business Analysis</span>
-                    </button>
-                </div>
-
-                <!-- Tab Panels -->
-                <div data-id="97" id="panel-product" class="tab-panel active grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel>
-                    <div data-id="98" class="expertise-card"><div data-id="99" class="flex items-center gap-3 mb-2"><i data-id="100" data-lucide="compass" class="w-5 h-5 text-indigo"></i><h4 data-id="101" class="font-semibold text-textPrimary">Lead Tech Product Management</h4></div><p data-id="102" class="text-textSecondary text-sm">Driving product vision, roadmap, and delivery for enterprise cloud data products and analytics platforms.</p></div>
-                    <div data-id="103" class="expertise-card"><div data-id="104" class="flex items-center gap-3 mb-2"><i data-id="105" data-lucide="clipboard-list" class="w-5 h-5 text-violet"></i><h4 data-id="106" class="font-semibold text-textPrimary">Data Product Requirements</h4></div><p data-id="107" class="text-textSecondary text-sm">Translating business needs into detailed data product requirements, source data definitions, and reporting logic.</p></div>
-                    <div data-id="108" class="expertise-card"><div data-id="109" class="flex items-center gap-3 mb-2"><i data-id="110" data-lucide="kanban" class="w-5 h-5 text-accent"></i><h4 data-id="111" class="font-semibold text-textPrimary">Backlog Prioritization & Agile Delivery</h4></div><p data-id="112" class="text-textSecondary text-sm">Managing product backlogs and sprint delivery using Agile and Scrum methodologies at enterprise scale.</p></div>
-                    <div data-id="113" class="expertise-card"><div data-id="114" class="flex items-center gap-3 mb-2"><i data-id="115" data-lucide="users" class="w-5 h-5 text-indigo"></i><h4 data-id="116" class="font-semibold text-textPrimary">Stakeholder Engagement</h4></div><p data-id="117" class="text-textSecondary text-sm">Aligning cross-functional stakeholders across business, development, QA, and data governance teams.</p></div>
-                    <div data-id="118" class="expertise-card"><div data-id="119" class="flex items-center gap-3 mb-2"><i data-id="120" data-lucide="check-square" class="w-5 h-5 text-violet"></i><h4 data-id="121" class="font-semibold text-textPrimary">Acceptance Criteria & Scope Definition</h4></div><p data-id="122" class="text-textSecondary text-sm">Defining clear acceptance criteria, scope boundaries, and validation requirements for data deliverables.</p></div>
-                    <div data-id="123" class="expertise-card"><div data-id="124" class="flex items-center gap-3 mb-2"><i data-id="125" data-lucide="rocket" class="w-5 h-5 text-accent"></i><h4 data-id="126" class="font-semibold text-textPrimary">Go-to-Market & Operating Practice Development</h4></div><p data-id="127" class="text-textSecondary text-sm">Crafting operating practices, strategy documentation, and go-to-market plans for data services teams.</p></div>
-                </div>
-
-                <div data-id="128" id="panel-data" class="tab-panel grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel>
-                    <div data-id="129" class="expertise-card"><div data-id="130" class="flex items-center gap-3 mb-2"><i data-id="131" data-lucide="cloud" class="w-5 h-5 text-indigo"></i><h4 data-id="132" class="font-semibold text-textPrimary">Azure Databricks</h4></div><p data-id="133" class="text-textSecondary text-sm">Leveraging Azure Databricks for scalable cloud data processing and analytics-ready data infrastructure.</p></div>
-                    <div data-id="134" class="expertise-card"><div data-id="135" class="flex items-center gap-3 mb-2"><i data-id="136" data-lucide="snowflake" class="w-5 h-5 text-violet"></i><h4 data-id="137" class="font-semibold text-textPrimary">Snowflake Data Strategy</h4></div><p data-id="138" class="text-textSecondary text-sm">Designing Snowflake-based data strategy documentation and cloud data set architectures for enterprise reporting.</p></div>
-                    <div data-id="139" class="expertise-card"><div data-id="140" class="flex items-center gap-3 mb-2"><i data-id="141" data-lucide="layers" class="w-5 h-5 text-accent"></i><h4 data-id="142" class="font-semibold text-textPrimary">Cloud Data Set Design</h4></div><p data-id="143" class="text-textSecondary text-sm">Architecting cloud data sets that support performance visibility, analytics, and downstream consumption.</p></div>
-                    <div data-id="144" class="expertise-card"><div data-id="145" class="flex items-center gap-3 mb-2"><i data-id="146" data-lucide="gauge" class="w-5 h-5 text-indigo"></i><h4 data-id="147" class="font-semibold text-textPrimary">KPI Development & Dashboard Design</h4></div><p data-id="148" class="text-textSecondary text-sm">Defining KPI frameworks and designing dashboards that give leadership actionable, real-time visibility.</p></div>
-                    <div data-id="149" class="expertise-card"><div data-id="150" class="flex items-center gap-3 mb-2"><i data-id="151" data-lucide="monitor" class="w-5 h-5 text-violet"></i><h4 data-id="152" class="font-semibold text-textPrimary">Business Intelligence Reporting</h4></div><p data-id="153" class="text-textSecondary text-sm">Managing intake, development, and delivery of BI reporting solutions that empower data-driven decisions.</p></div>
-                    <div data-id="154" class="expertise-card"><div data-id="155" class="flex items-center gap-3 mb-2"><i data-id="156" data-lucide="shield-check" class="w-5 h-5 text-accent"></i><h4 data-id="157" class="font-semibold text-textPrimary">Data Governance Frameworks</h4></div><p data-id="158" class="text-textSecondary text-sm">Establishing data governance policies, quality standards, and compliance practices across the organization.</p></div>
-                </div>
-
-                <div data-id="159" id="panel-ba" class="tab-panel grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel>
-                    <div data-id="160" class="expertise-card"><div data-id="161" class="flex items-center gap-3 mb-2"><i data-id="162" data-lucide="file-check" class="w-5 h-5 text-indigo"></i><h4 data-id="163" class="font-semibold text-textPrimary">Business Requirements & Functional Specs</h4></div><p data-id="164" class="text-textSecondary text-sm">Eliciting, documenting, and validating business requirements and functional specifications for complex data initiatives.</p></div>
-                    <div data-id="165" class="expertise-card"><div data-id="166" class="flex items-center gap-3 mb-2"><i data-id="167" data-lucide="workflow" class="w-5 h-5 text-violet"></i><h4 data-id="168" class="font-semibold text-textPrimary">Workflow Analysis & Process Improvement</h4></div><p data-id="169" class="text-textSecondary text-sm">Analyzing existing workflows and identifying automation and efficiency improvements across business operations.</p></div>
-                    <div data-id="170" class="expertise-card"><div data-id="171" class="flex items-center gap-3 mb-2"><i data-id="172" data-lucide="settings" class="w-5 h-5 text-accent"></i><h4 data-id="173" class="font-semibold text-textPrimary">ServiceNow Workflow Optimization</h4></div><p data-id="174" class="text-textSecondary text-sm">Optimizing ServiceNow intake workflows, request routing, and backlog management for data services teams.</p></div>
-                    <div data-id="175" class="expertise-card"><div data-id="176" class="flex items-center gap-3 mb-2"><i data-id="177" data-lucide="bar-chart-3" class="w-5 h-5 text-indigo"></i><h4 data-id="178" class="font-semibold text-textPrimary">Tableau Reporting Governance</h4></div><p data-id="179" class="text-textSecondary text-sm">Establishing Tableau reporting standards, governance practices, and visualization consistency across teams.</p></div>
-                    <div data-id="180" class="expertise-card"><div data-id="181" class="flex items-center gap-3 mb-2"><i data-id="182" data-lucide="code" class="w-5 h-5 text-violet"></i><h4 data-id="183" class="font-semibold text-textPrimary">SDLC Support & Technical Review</h4></div><p data-id="184" class="text-textSecondary text-sm">Supporting SDLC processes including technical reviews, test planning, UAT coordination, and release management.</p></div>
-                    <div data-id="185" class="expertise-card"><div data-id="186" class="flex items-center gap-3 mb-2"><i data-id="187" data-lucide="presentation" class="w-5 h-5 text-accent"></i><h4 data-id="188" class="font-semibold text-textPrimary">Executive Communication & Presentations</h4></div><p data-id="189" class="text-textSecondary text-sm">Preparing executive-ready presentations, status reports, and strategic communications for leadership stakeholders.</p></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- IMPACT METRICS SECTION -->
-        <section data-id="190" id="impact" class="py-20 md:py-32 px-4 md:px-8">
-            <div data-id="191" class="max-w-7xl mx-auto reveal">
-                <div data-id="192" class="text-center mb-12">
-                    <h2 data-id="193" class="text-3xl md:text-4xl font-bold gradient-text mb-2">Measurable Results</h2>
-                    <div data-id="194" class="section-divider"></div>
-                    <p data-id="195" class="text-textSecondary max-w-xl mx-auto">Quantified outcomes from data product delivery, process automation, and analytics leadership.</p>
-                </div>
-
-                <div data-id="196" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- $15M Savings Card -->
-                    <div data-id="197" class="stat-card glass-card p-8 text-center cursor-default" style="transform:none;">
-                        <div data-id="198" class="text-4xl mb-3">💰</div>
-                        <div data-id="199" class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter data-target="15" data-prefix="$" data-suffix="M">$0M</div>
-                        <p data-id="200" class="text-textSecondary text-sm">Projected annual savings from the current enterprise data product (Optum)</p>
-                    </div>
-                    <div data-id="201" class="stat-card glass-card p-8 text-center cursor-default" style="transform:none;">
-                        <div data-id="202" class="text-4xl mb-3">📈</div>
-                        <div data-id="203" class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter data-target="30" data-suffix="%">0%</div>
-                        <p data-id="204" class="text-textSecondary text-sm">Reduction in duplicate and misrouted backlog items (Clear Channel Communications)</p>
-                    </div>
-                    <div data-id="205" class="stat-card glass-card p-8 text-center cursor-default" style="transform:none;">
-                        <div data-id="206" class="text-4xl mb-3">✅</div>
-                        <div data-id="207" class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter data-target="98" data-suffix="%">0%</div>
-                        <p data-id="208" class="text-textSecondary text-sm">On-time delivery achieved on data warehouse project (Optum)</p>
-                    </div>
-                    <div data-id="209" class="stat-card glass-card p-8 text-center cursor-default" style="transform:none;">
-                        <div data-id="210" class="text-4xl mb-3">💼</div>
-                        <div data-id="211" class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter data-target="250" data-prefix="$" data-suffix="K">$0K</div>
-                        <p data-id="212" class="text-textSecondary text-sm">COBOL-to-SQL/.NET accounting system migration delivered with SAP integration (Valero)</p>
-                    </div>
-                    <div data-id="213" class="stat-card glass-card p-8 text-center cursor-default" style="transform:none;">
-                        <div data-id="214" class="text-4xl mb-3">👥</div>
-                        <div data-id="215" class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter data-target="10" data-suffix="K">0K</div>
-                        <p data-id="216" class="text-textSecondary text-sm">Employees supported through nationwide time-entry system implementation (Valero)</p>
-                    </div>
-                    <div data-id="217" class="stat-card glass-card p-8 text-center cursor-default" style="transform:none;">
-                        <div data-id="218" class="text-4xl mb-3">🗂️</div>
-                        <div data-id="219" class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter data-target="25" data-suffix="+">0+</div>
-                        <p data-id="220" class="text-textSecondary text-sm">Years leading data, analytics, and product initiatives across major enterprises</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO SECTION -->
-        <section data-id="221" id="portfolio" class="py-20 md:py-32 px-4 md:px-8">
-            <div data-id="222" class="max-w-5xl mx-auto reveal">
-                <div data-id="223" class="text-center mb-12">
-                    <h2 data-id="224" class="text-3xl md:text-4xl font-bold gradient-text mb-2">Featured Initiatives</h2>
-                    <div data-id="225" class="section-divider"></div>
-                </div>
-
-                <div data-id="226" class="space-y-6">
-                    <!-- Project 1 -->
-                    <div data-id="227" class="glass-card overflow-hidden cursor-pointer" style="transform:none;" data-accordion>
-                        <div data-id="228" class="p-6 md:p-8" data-accordion-trigger>
-                            <div data-id="229" class="flex items-start justify-between gap-4">
-                                <div data-id="230" class="flex-1">
-                                    <div data-id="231" class="flex flex-wrap gap-2 mb-3">
-                                        <span data-id="232" class="tag">Cloud Data Products</span>
-                                        <span data-id="233" class="tag">Azure Databricks & Snowflake</span>
-                                    </div>
-                                    <h3 data-id="234" class="text-xl md:text-2xl font-bold mb-3 text-textPrimary">AI-Ready Cloud Data Strategy</h3>
-                                    <p data-id="235" class="text-textSecondary text-sm md:text-base">Led product management for enterprise data services at Optum, designing cloud-based data sets on Snowflake and Azure Databricks that enable AI/ML readiness, analytics, and performance visibility across the organization. The team consistently adapts to changing business priorities while maintaining on-schedule delivery of high-value features.</p>
-                                </div>
-                                <div data-id="236" class="flex-shrink-0 mt-1">
-                                    <i data-id="237" data-lucide="chevron-down" class="w-6 h-6 text-textSecondary transition-transform duration-300 accordion-icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-id="238" class="accordion-content px-6 md:px-8 pb-6 md:pb-8">
-                            <div data-id="239" class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6" style="border-color: rgba(255,255,255,0.15);">
-                                <div data-id="240">
-                                    <h4 data-id="241" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Key Actions</h4>
-                                    <ul data-id="242" class="text-textSecondary text-sm space-y-1">
-                                        <li data-id="243" class="flex items-start gap-2"><i data-id="244" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Translated business requirements into cloud data set designs</li>
-                                        <li data-id="245" class="flex items-start gap-2"><i data-id="246" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Defined source data needs, reporting logic, and acceptance criteria</li>
-                                        <li data-id="247" class="flex items-start gap-2"><i data-id="248" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Developed Snowflake strategy documentation and data services operating practices</li>
-                                    </ul>
-                                </div>
-                                <div data-id="249">
-                                    <h4 data-id="250" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Outcome</h4>
-                                    <ul data-id="251" class="text-textSecondary text-sm space-y-1">
-                                        <li data-id="252" class="flex items-start gap-2"><i data-id="253" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> Improved data accessibility for analytics and reporting teams</li>
-                                        <li data-id="254" class="flex items-start gap-2"><i data-id="255" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> Established repeatable data governance practices supporting AI-ready architecture</li>
-                                        <li data-id="256" class="flex items-start gap-2"><i data-id="257" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> Team consistently adapts to evolving business needs while delivering valuable features on schedule — maintaining stakeholder trust and roadmap momentum</li>
-                                    </ul>
-                                </div>
-                                <div data-id="258">
-                                    <h4 data-id="259" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Tools & Stack</h4>
-                                    <div data-id="260" class="flex flex-wrap gap-2">
-                                        <span data-id="261" class="tag">Azure Databricks</span>
-                                        <span data-id="262" class="tag">Snowflake</span>
-                                        <span data-id="263" class="tag">Tableau</span>
-                                        <span data-id="264" class="tag">ServiceNow</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div data-id="265" class="glass-card overflow-hidden cursor-pointer" style="transform:none;" data-accordion>
-                        <div data-id="266" class="p-6 md:p-8" data-accordion-trigger>
-                            <div data-id="267" class="flex items-start justify-between gap-4">
-                                <div data-id="268" class="flex-1">
-                                    <div data-id="269" class="flex flex-wrap gap-2 mb-3">
-                                        <span data-id="270" class="tag">Business Intelligence</span>
-                                        <span data-id="271" class="tag">KPI Reporting</span>
-                                        <span data-id="272" class="tag">Data Governance</span>
-                                    </div>
-                                    <h3 data-id="273" class="text-xl md:text-2xl font-bold mb-3 text-textPrimary">Enterprise BI Reporting & Analytics Delivery</h3>
-                                    <p data-id="274" class="text-textSecondary text-sm md:text-base">Managed intake, prioritization, and delivery of BI reporting solutions for business partners — defining KPI dashboards, visualizations, and reporting logic that improved performance visibility and leadership decision-making.</p>
-                                </div>
-                                <div data-id="275" class="flex-shrink-0 mt-1">
-                                    <i data-id="276" data-lucide="chevron-down" class="w-6 h-6 text-textSecondary transition-transform duration-300 accordion-icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-id="277" class="accordion-content px-6 md:px-8 pb-6 md:pb-8">
-                            <div data-id="278" class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6" style="border-color: rgba(255,255,255,0.15);">
-                                <div data-id="279">
-                                    <h4 data-id="280" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Approach</h4>
-                                    <ul data-id="281" class="text-textSecondary text-sm space-y-1">
-                                        <li data-id="282" class="flex items-start gap-2"><i data-id="283" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Managed report request intake → requirements validation → development handoff</li>
-                                        <li data-id="284" class="flex items-start gap-2"><i data-id="285" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Stakeholder review and iterative refinement</li>
-                                        <li data-id="286" class="flex items-start gap-2"><i data-id="287" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Cross-functional alignment across business, development, and QA teams</li>
-                                    </ul>
-                                </div>
-                                <div data-id="288">
-                                    <h4 data-id="289" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Outcome</h4>
-                                    <ul data-id="290" class="text-textSecondary text-sm space-y-1">
-                                        <li data-id="291" class="flex items-start gap-2"><i data-id="292" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> Improved reporting consistency through Tableau governance</li>
-                                        <li data-id="293" class="flex items-start gap-2"><i data-id="294" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> 98% on-time delivery on data warehouse project</li>
-                                    </ul>
-                                </div>
-                                <div data-id="295">
-                                    <h4 data-id="296" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Tools & Stack</h4>
-                                    <div data-id="297" class="flex flex-wrap gap-2">
-                                        <span data-id="298" class="tag">Tableau</span>
-                                        <span data-id="299" class="tag">ServiceNow</span>
-                                        <span data-id="300" class="tag">SQL</span>
-                                        <span data-id="301" class="tag">Excel</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div data-id="302" class="glass-card overflow-hidden cursor-pointer" style="transform:none;" data-accordion>
-                        <div data-id="303" class="p-6 md:p-8" data-accordion-trigger>
-                            <div data-id="304" class="flex items-start justify-between gap-4">
-                                <div data-id="305" class="flex-1">
-                                    <div data-id="306" class="flex flex-wrap gap-2 mb-3">
-                                        <span data-id="307" class="tag">Process Automation</span>
-                                        <span data-id="308" class="tag">Systems Migration</span>
-                                        <span data-id="309" class="tag">Enterprise Scale</span>
-                                    </div>
-                                    <h3 data-id="310" class="text-xl md:text-2xl font-bold mb-3 text-textPrimary">Retail Accounting Automation & Systems Modernization</h3>
-                                    <p data-id="311" class="text-textSecondary text-sm md:text-base">Managed retail accounting system projects and reporting automation at Valero Energy over 12+ years, eliminating 90% of manual processes and delivering a $250K COBOL-to-SQL/.NET migration with SAP integration.</p>
-                                </div>
-                                <div data-id="312" class="flex-shrink-0 mt-1">
-                                    <i data-id="313" data-lucide="chevron-down" class="w-6 h-6 text-textSecondary transition-transform duration-300 accordion-icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-id="314" class="accordion-content px-6 md:px-8 pb-6 md:pb-8">
-                            <div data-id="315" class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6" style="border-color: rgba(255,255,255,0.15);">
-                                <div data-id="316">
-                                    <h4 data-id="317" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Key Actions</h4>
-                                    <ul data-id="318" class="text-textSecondary text-sm space-y-1">
-                                        <li data-id="319" class="flex items-start gap-2"><i data-id="320" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Automated accounting workflows through database design and reporting enhancements</li>
-                                        <li data-id="321" class="flex items-start gap-2"><i data-id="322" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Delivered COBOL-to-SQL/.NET migration with SAP integration</li>
-                                        <li data-id="323" class="flex items-start gap-2"><i data-id="324" data-lucide="check" class="w-4 h-4 text-accent flex-shrink-0 mt-0.5"></i> Created training environment for 10K-employee nationwide rollout</li>
-                                    </ul>
-                                </div>
-                                <div data-id="325">
-                                    <h4 data-id="326" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Outcome</h4>
-                                    <ul data-id="327" class="text-textSecondary text-sm space-y-1">
-                                        <li data-id="328" class="flex items-start gap-2"><i data-id="329" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> 90% manual process reduction</li>
-                                        <li data-id="330" class="flex items-start gap-2"><i data-id="331" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> $250K migration delivered successfully</li>
-                                        <li data-id="332" class="flex items-start gap-2"><i data-id="333" data-lucide="trending-up" class="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5"></i> Enterprise-wide operational reporting for management</li>
-                                    </ul>
-                                </div>
-                                <div data-id="334">
-                                    <h4 data-id="335" class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Tools & Stack</h4>
-                                    <div data-id="336" class="flex flex-wrap gap-2">
-                                        <span data-id="337" class="tag">SQL</span>
-                                        <span data-id="338" class="tag">.NET</span>
-                                        <span data-id="339" class="tag">SAP</span>
-                                        <span data-id="340" class="tag">COBOL</span>
-                                        <span data-id="341" class="tag">Excel</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- RECOGNITION SECTION -->
-        <section data-id="342" id="recognition" class="py-20 md:py-32 px-4 md:px-8">
-            <div data-id="343" class="max-w-7xl mx-auto reveal">
-                <div data-id="344" class="text-center mb-12">
-                    <h2 data-id="345" class="text-3xl md:text-4xl font-bold gradient-text mb-2">Recognition & Credentials</h2>
-                    <div data-id="346" class="section-divider"></div>
-                </div>
-
-                <div data-id="347" class="relative">
-                    <!-- Carousel Arrows -->
-                    <div data-id="348" class="flex justify-end gap-2 mb-6">
-                        <button data-id="349" id="carousel-prev" class="carousel-arrow" aria-label="Previous">
-                            <i data-id="350" data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button data-id="351" id="carousel-next" class="carousel-arrow" aria-label="Next">
-                            <i data-id="352" data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-
-                    <div data-id="353" id="carousel-track" class="carousel-track flex gap-6 overflow-x-auto pb-4" style="scroll-snap-type: x mandatory;">
-                        <div data-id="354" class="credential-card glass-card p-6 flex-shrink-0" style="scroll-snap-align: start; transform:none;">
-                            <div data-id="355" class="text-4xl mb-4">🏅</div>
-                            <h3 data-id="356" class="font-bold text-lg mb-1 text-textPrimary">Certified Scrum Product Owner (CSPO)</h3>
-                            <p data-id="357" class="text-textSecondary text-sm">Scrum Alliance</p>
-                            <p data-id="358" class="text-textSecondary text-xs mt-1">Issued Nov 2024</p>
-                        </div>
-                        <div data-id="359" class="credential-card glass-card p-6 flex-shrink-0" style="scroll-snap-align: start; transform:none;">
-                            <div data-id="360" class="text-4xl mb-4">🎓</div>
-                            <h3 data-id="361" class="font-bold text-lg mb-1 text-textPrimary">Certified Scrum Master (CSM)</h3>
-                            <p data-id="362" class="text-textSecondary text-sm">Scrum Alliance</p>
-                            <p data-id="363" class="text-textSecondary text-xs mt-1">Issued Sep 2024</p>
-                        </div>
-                        <div data-id="364" class="credential-card glass-card p-6 flex-shrink-0" style="scroll-snap-align: start; transform:none;">
-                            <div data-id="365" class="text-4xl mb-4">🤖</div>
-                            <h3 data-id="366" class="font-bold text-lg mb-1 text-textPrimary">Professional Scrum Master (PSM)</h3>
-                            <p data-id="367" class="text-textSecondary text-sm">Scrum.org</p>
-                            <p data-id="368" class="text-textSecondary text-xs mt-1">Issued Aug 2024</p>
-                        </div>
-                        <div data-id="369" class="credential-card glass-card p-6 flex-shrink-0" style="scroll-snap-align: start; transform:none;">
-                            <div data-id="370" class="text-4xl mb-4">☁️</div>
-                            <h3 data-id="371" class="font-bold text-lg mb-1 text-textPrimary">Microsoft Certified: Azure Fundamentals</h3>
-                            <p data-id="372" class="text-textSecondary text-sm">Microsoft</p>
-                            <p data-id="373" class="text-textSecondary text-xs mt-1">Issued Jul 2024</p>
-                        </div>
-                        <div data-id="374" class="credential-card glass-card p-6 flex-shrink-0" style="scroll-snap-align: start; transform:none;">
-                            <div data-id="375" class="text-4xl mb-4">📊</div>
-                            <h3 data-id="376" class="font-bold text-lg mb-1 text-textPrimary">Certified Business Analysis Professional (CBAP)</h3>
-                            <p data-id="377" class="text-textSecondary text-sm">IIBA</p>
-                            <p data-id="378" class="text-textSecondary text-xs mt-1">Issued Jan 2019 · Valid through Jan 2028</p>
-                        </div>
-                        <div data-id="379" class="credential-card glass-card p-6 flex-shrink-0" style="scroll-snap-align: start; transform:none;">
-                            <div data-id="380" class="text-4xl mb-4">🏆</div>
-                            <h3 data-id="381" class="font-bold text-lg mb-1 text-textPrimary">IT Management & Leadership Professional (ITMLP)</h3>
-                            <p data-id="382" class="text-textSecondary text-sm">IT Management and Leadership Institute</p>
-                            <p data-id="383" class="text-textSecondary text-xs mt-1">Issued Mar 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section data-id="384" id="contact" class="py-20 md:py-32 px-4 md:px-8">
-            <div data-id="385" class="max-w-3xl mx-auto text-center reveal">
-                <h2 data-id="386" class="text-3xl md:text-5xl font-bold gradient-text mb-4">Let's Build Data Products That Matter</h2>
-                <div data-id="387" class="section-divider"></div>
-                <p data-id="388" class="text-textSecondary text-lg mb-10 max-w-xl mx-auto">Open to senior product and data leadership roles where cloud data strategy meets business impact.</p>
-
-                <div data-id="389" class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-                    <a data-id="390" href="https://www.linkedin.com/in/christan-franklin-cbap-92885723/" target="_blank" rel="noopener noreferrer" class="btn-pill btn-linkedin" id="linkedin-btn">
-                        <i data-id="391" data-lucide="linkedin" class="w-4 h-4"></i>
+</div>
+</div>
+<!-- Value Props -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16" data-id="66">
+<div class="glass-card p-6 text-center cursor-default" data-id="67" style="transform:none;">
+<div class="value-icon mx-auto mb-4" data-id="68">
+<span style="font-style:normal; line-height:1; display:inline-block;">●</span>
+</div>
+<h3 class="font-bold text-lg mb-2 text-textPrimary" data-id="70" style="color:#f1f5f9 !important;">Cloud Data Products</h3>
+<p class="text-textSecondary text-sm" data-id="71" style="color:#cbd5e1 !important;">Designing and delivering cloud-based data sets and reporting solutions that power enterprise analytics.</p>
+</div>
+<div class="glass-card p-6 text-center cursor-default" data-id="72" style="transform:none;">
+<div class="value-icon mx-auto mb-4" data-id="73">
+<span style="font-style:normal; line-height:1; display:inline-block;">🗄️</span>
+</div>
+<h3 class="font-bold text-lg mb-2 text-textPrimary" data-id="75" style="color:#f1f5f9 !important;">Azure Databricks &amp; Snowflake</h3>
+<p class="text-textSecondary text-sm" data-id="76" style="color:#cbd5e1 !important;">Building cloud data architecture on Azure Databricks and Snowflake to enable scalable analytics and data-ready infrastructure.</p>
+</div>
+<div class="glass-card p-6 text-center cursor-default" data-id="77" style="transform:none;">
+<div class="value-icon mx-auto mb-4" data-id="78">
+<span style="font-style:normal; line-height:1; display:inline-block;">🎯</span>
+</div>
+<h3 class="font-bold text-lg mb-2 text-textPrimary" data-id="80" style="color:#f1f5f9 !important;">KPI-Driven Analytics</h3>
+<p class="text-textSecondary text-sm" data-id="81" style="color:#cbd5e1 !important;">Defining KPI frameworks and dashboards that give leadership the visibility to make confident, data-driven decisions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERTISE SECTION -->
+<section class="py-20 md:py-32 px-4 md:px-8" data-id="82" id="expertise">
+<div class="max-w-7xl mx-auto reveal" data-id="83">
+<div class="text-center mb-12" data-id="84">
+<h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2" data-id="85">Core Competencies</h2>
+<div class="section-divider" data-id="86"></div>
+</div>
+<!-- Tabs -->
+<div class="flex flex-wrap justify-center gap-3 mb-10" data-id="87">
+<button class="tab-btn-custom active" data-expertise-tab="product" data-id="88">
+<span class="flex items-center gap-2" data-id="89"><span style="font-style:normal; line-height:1; display:inline-block;">●</span> Product Management</span>
+</button>
+<button class="tab-btn-custom" data-expertise-tab="data" data-id="91">
+<span class="flex items-center gap-2" data-id="92"><span style="font-style:normal; line-height:1; display:inline-block;">🗄️</span> Data &amp; Analytics</span>
+</button>
+<button class="tab-btn-custom" data-expertise-tab="ba" data-id="94">
+<span class="flex items-center gap-2" data-id="95"><span style="font-style:normal; line-height:1; display:inline-block;">●</span> Business Analysis</span>
+</button>
+</div>
+<!-- Tab Panels -->
+<div class="tab-panel active grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel="" data-id="97" id="panel-product">
+<div class="expertise-card" data-id="98"><div class="flex items-center gap-3 mb-2" data-id="99"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="101" style="color:#f1f5f9 !important;">Lead Tech Product Management</h4></div><p class="text-textSecondary text-sm" data-id="102" style="color:#cbd5e1 !important;">Driving product vision, roadmap, and delivery for enterprise cloud data products and analytics platforms.</p></div>
+<div class="expertise-card" data-id="103"><div class="flex items-center gap-3 mb-2" data-id="104"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="106" style="color:#f1f5f9 !important;">Data Product Requirements</h4></div><p class="text-textSecondary text-sm" data-id="107" style="color:#cbd5e1 !important;">Translating business needs into detailed data product requirements, source data definitions, and reporting logic.</p></div>
+<div class="expertise-card" data-id="108"><div class="flex items-center gap-3 mb-2" data-id="109"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="111" style="color:#f1f5f9 !important;">Backlog Prioritization &amp; Agile Delivery</h4></div><p class="text-textSecondary text-sm" data-id="112" style="color:#cbd5e1 !important;">Managing product backlogs and sprint delivery using Agile and Scrum methodologies at enterprise scale.</p></div>
+<div class="expertise-card" data-id="113"><div class="flex items-center gap-3 mb-2" data-id="114"><span style="font-style:normal; line-height:1; display:inline-block;">👥</span><h4 class="font-semibold text-textPrimary" data-id="116" style="color:#f1f5f9 !important;">Stakeholder Engagement</h4></div><p class="text-textSecondary text-sm" data-id="117" style="color:#cbd5e1 !important;">Aligning cross-functional stakeholders across business, development, QA, and data governance teams.</p></div>
+<div class="expertise-card" data-id="118"><div class="flex items-center gap-3 mb-2" data-id="119"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="121" style="color:#f1f5f9 !important;">Acceptance Criteria &amp; Scope Definition</h4></div><p class="text-textSecondary text-sm" data-id="122" style="color:#cbd5e1 !important;">Defining clear acceptance criteria, scope boundaries, and validation requirements for data deliverables.</p></div>
+<div class="expertise-card" data-id="123"><div class="flex items-center gap-3 mb-2" data-id="124"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="126" style="color:#f1f5f9 !important;">Go-to-Market &amp; Operating Practice Development</h4></div><p class="text-textSecondary text-sm" data-id="127" style="color:#cbd5e1 !important;">Crafting operating practices, strategy documentation, and go-to-market plans for data services teams.</p></div>
+</div>
+<div class="tab-panel grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel="" data-id="128" id="panel-data">
+<div class="expertise-card" data-id="129"><div class="flex items-center gap-3 mb-2" data-id="130"><span style="font-style:normal; line-height:1; display:inline-block;">☁️</span><h4 class="font-semibold text-textPrimary" data-id="132" style="color:#f1f5f9 !important;">Azure Databricks</h4></div><p class="text-textSecondary text-sm" data-id="133" style="color:#cbd5e1 !important;">Leveraging Azure Databricks for scalable cloud data processing and analytics-ready data infrastructure.</p></div>
+<div class="expertise-card" data-id="134"><div class="flex items-center gap-3 mb-2" data-id="135"><span style="font-style:normal; line-height:1; display:inline-block;">❄️</span><h4 class="font-semibold text-textPrimary" data-id="137" style="color:#f1f5f9 !important;">Snowflake Data Strategy</h4></div><p class="text-textSecondary text-sm" data-id="138" style="color:#cbd5e1 !important;">Designing Snowflake-based data strategy documentation and cloud data set architectures for enterprise reporting.</p></div>
+<div class="expertise-card" data-id="139"><div class="flex items-center gap-3 mb-2" data-id="140"><span style="font-style:normal; line-height:1; display:inline-block;">🗂️</span><h4 class="font-semibold text-textPrimary" data-id="142" style="color:#f1f5f9 !important;">Cloud Data Set Design</h4></div><p class="text-textSecondary text-sm" data-id="143" style="color:#cbd5e1 !important;">Architecting cloud data sets that support performance visibility, analytics, and downstream consumption.</p></div>
+<div class="expertise-card" data-id="144"><div class="flex items-center gap-3 mb-2" data-id="145"><span style="font-style:normal; line-height:1; display:inline-block;">🎯</span><h4 class="font-semibold text-textPrimary" data-id="147" style="color:#f1f5f9 !important;">KPI Development &amp; Dashboard Design</h4></div><p class="text-textSecondary text-sm" data-id="148" style="color:#cbd5e1 !important;">Defining KPI frameworks and designing dashboards that give leadership actionable, real-time visibility.</p></div>
+<div class="expertise-card" data-id="149"><div class="flex items-center gap-3 mb-2" data-id="150"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="152" style="color:#f1f5f9 !important;">Business Intelligence Reporting</h4></div><p class="text-textSecondary text-sm" data-id="153" style="color:#cbd5e1 !important;">Managing intake, development, and delivery of BI reporting solutions that empower data-driven decisions.</p></div>
+<div class="expertise-card" data-id="154"><div class="flex items-center gap-3 mb-2" data-id="155"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="157" style="color:#f1f5f9 !important;">Data Governance Frameworks</h4></div><p class="text-textSecondary text-sm" data-id="158" style="color:#cbd5e1 !important;">Establishing data governance policies, quality standards, and compliance practices across the organization.</p></div>
+</div>
+<div class="tab-panel grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel="" data-id="159" id="panel-ba">
+<div class="expertise-card" data-id="160"><div class="flex items-center gap-3 mb-2" data-id="161"><span style="font-style:normal; line-height:1; display:inline-block;">📋</span><h4 class="font-semibold text-textPrimary" data-id="163" style="color:#f1f5f9 !important;">Business Requirements &amp; Functional Specs</h4></div><p class="text-textSecondary text-sm" data-id="164" style="color:#cbd5e1 !important;">Eliciting, documenting, and validating business requirements and functional specifications for complex data initiatives.</p></div>
+<div class="expertise-card" data-id="165"><div class="flex items-center gap-3 mb-2" data-id="166"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="168" style="color:#f1f5f9 !important;">Workflow Analysis &amp; Process Improvement</h4></div><p class="text-textSecondary text-sm" data-id="169" style="color:#cbd5e1 !important;">Analyzing existing workflows and identifying automation and efficiency improvements across business operations.</p></div>
+<div class="expertise-card" data-id="170"><div class="flex items-center gap-3 mb-2" data-id="171"><span style="font-style:normal; line-height:1; display:inline-block;">⚙️</span><h4 class="font-semibold text-textPrimary" data-id="173" style="color:#f1f5f9 !important;">ServiceNow Workflow Optimization</h4></div><p class="text-textSecondary text-sm" data-id="174" style="color:#cbd5e1 !important;">Optimizing ServiceNow intake workflows, request routing, and backlog management for data services teams.</p></div>
+<div class="expertise-card" data-id="175"><div class="flex items-center gap-3 mb-2" data-id="176"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="178" style="color:#f1f5f9 !important;">Tableau Reporting Governance</h4></div><p class="text-textSecondary text-sm" data-id="179" style="color:#cbd5e1 !important;">Establishing Tableau reporting standards, governance practices, and visualization consistency across teams.</p></div>
+<div class="expertise-card" data-id="180"><div class="flex items-center gap-3 mb-2" data-id="181"><span style="font-style:normal; line-height:1; display:inline-block;">💻</span><h4 class="font-semibold text-textPrimary" data-id="183" style="color:#f1f5f9 !important;">SDLC Support &amp; Technical Review</h4></div><p class="text-textSecondary text-sm" data-id="184" style="color:#cbd5e1 !important;">Supporting SDLC processes including technical reviews, test planning, UAT coordination, and release management.</p></div>
+<div class="expertise-card" data-id="185"><div class="flex items-center gap-3 mb-2" data-id="186"><span style="font-style:normal; line-height:1; display:inline-block;">●</span><h4 class="font-semibold text-textPrimary" data-id="188" style="color:#f1f5f9 !important;">Executive Communication &amp; Presentations</h4></div><p class="text-textSecondary text-sm" data-id="189" style="color:#cbd5e1 !important;">Preparing executive-ready presentations, status reports, and strategic communications for leadership stakeholders.</p></div>
+</div>
+</div>
+</section>
+<!-- IMPACT METRICS SECTION -->
+<section class="py-20 md:py-32 px-4 md:px-8" data-id="190" id="impact">
+<div class="max-w-7xl mx-auto reveal" data-id="191">
+<div class="text-center mb-12" data-id="192">
+<h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2" data-id="193">Measurable Results</h2>
+<div class="section-divider" data-id="194"></div>
+<p class="text-textSecondary max-w-xl mx-auto" data-id="195" style="color:#cbd5e1 !important;">Quantified outcomes from data product delivery, process automation, and analytics leadership.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-id="196">
+<!-- $15M Savings Card -->
+<div class="stat-card glass-card p-8 text-center cursor-default" data-id="197" style="transform:none;">
+<div class="text-4xl mb-3" data-id="198">💰</div>
+<div class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter="" data-id="199" data-prefix="$" data-suffix="M" data-target="15">$0M</div>
+<p class="text-textSecondary text-sm" data-id="200" style="color:#cbd5e1 !important;">Projected annual savings from the current enterprise data product (Optum)</p>
+</div>
+<div class="stat-card glass-card p-8 text-center cursor-default" data-id="201" style="transform:none;">
+<div class="text-4xl mb-3" data-id="202">📈</div>
+<div class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter="" data-id="203" data-suffix="%" data-target="30">0%</div>
+<p class="text-textSecondary text-sm" data-id="204" style="color:#cbd5e1 !important;">Reduction in duplicate and misrouted backlog items (Clear Channel Communications)</p>
+</div>
+<div class="stat-card glass-card p-8 text-center cursor-default" data-id="205" style="transform:none;">
+<div class="text-4xl mb-3" data-id="206">✅</div>
+<div class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter="" data-id="207" data-suffix="%" data-target="98">0%</div>
+<p class="text-textSecondary text-sm" data-id="208" style="color:#cbd5e1 !important;">On-time delivery achieved on data warehouse project (Optum)</p>
+</div>
+<div class="stat-card glass-card p-8 text-center cursor-default" data-id="209" style="transform:none;">
+<div class="text-4xl mb-3" data-id="210">💼</div>
+<div class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter="" data-id="211" data-prefix="$" data-suffix="K" data-target="250">$0K</div>
+<p class="text-textSecondary text-sm" data-id="212" style="color:#cbd5e1 !important;">COBOL-to-SQL/.NET accounting system migration delivered with SAP integration (Valero)</p>
+</div>
+<div class="stat-card glass-card p-8 text-center cursor-default" data-id="213" style="transform:none;">
+<div class="text-4xl mb-3" data-id="214">👥</div>
+<div class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter="" data-id="215" data-suffix="K" data-target="10">0K</div>
+<p class="text-textSecondary text-sm" data-id="216" style="color:#cbd5e1 !important;">Employees supported through nationwide time-entry system implementation (Valero)</p>
+</div>
+<div class="stat-card glass-card p-8 text-center cursor-default" data-id="217" style="transform:none;">
+<div class="text-4xl mb-3" data-id="218">🗂️</div>
+<div class="text-4xl md:text-5xl font-black gradient-text mb-2" data-counter="" data-id="219" data-suffix="+" data-target="25">0+</div>
+<p class="text-textSecondary text-sm" data-id="220" style="color:#cbd5e1 !important;">Years leading data, analytics, and product initiatives across major enterprises</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO SECTION -->
+<section class="py-20 md:py-32 px-4 md:px-8" data-id="221" id="portfolio">
+<div class="max-w-5xl mx-auto reveal" data-id="222">
+<div class="text-center mb-12" data-id="223">
+<h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2" data-id="224">Featured Initiatives</h2>
+<div class="section-divider" data-id="225"></div>
+</div>
+<div class="space-y-6" data-id="226">
+<!-- Project 1: AI-Ready Cloud Data Strategy -->
+<div class="glass-card overflow-hidden cursor-pointer" data-accordion="" data-id="227" style="transform:none;">
+<div class="p-6 md:p-8" data-accordion-trigger="" data-id="228">
+<div class="flex items-start justify-between gap-4" data-id="229">
+<div class="flex-1" data-id="230">
+<div class="flex flex-wrap gap-2 mb-3" data-id="231">
+<span class="tag" data-id="232">Cloud Data Products</span>
+<span class="tag" data-id="233">Azure Databricks &amp; Snowflake</span>
+</div>
+<div class="flex items-center gap-3 mb-3" data-id="234">
+<div class="portfolio-header-icon icon-cloud" data-id="235">
+<span style="color: var(--accent-cyan);; font-style:normal; line-height:1; display:inline-block;">☁️</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-textPrimary" data-id="237" style="color:#f1f5f9 !important;">AI-Ready Cloud Data Strategy</h3>
+</div>
+<p class="text-textSecondary text-sm md:text-base" data-id="238" style="color:#cbd5e1 !important;">Led product management for enterprise data services at Optum, designing cloud-based data sets on Snowflake and Azure Databricks that enable AI/ML readiness, analytics, and performance visibility across the organization. The team consistently adapts to changing business priorities while maintaining on-schedule delivery of high-value features.</p>
+</div>
+<div class="flex-shrink-0 mt-1" data-id="239">
+<span style="font-style:normal; line-height:1; display:inline-block;">▼</span>
+</div>
+</div>
+</div>
+<div class="accordion-content px-6 md:px-8 pb-6 md:pb-8" data-id="241">
+<div class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6" data-id="242" style="border-color: rgba(255,255,255,0.15);">
+<div data-id="243">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="244" style="color:#06b6d4 !important;">Key Actions</h4>
+<ul class="text-textSecondary text-sm space-y-1" data-id="245" style="color:#cbd5e1 !important;">
+<li class="flex items-start gap-2" data-id="246"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Translated business requirements into cloud data set designs</li>
+<li class="flex items-start gap-2" data-id="248"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Defined source data needs, reporting logic, and acceptance criteria</li>
+<li class="flex items-start gap-2" data-id="250"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Developed Snowflake strategy documentation and data services operating practices</li>
+</ul>
+</div>
+<div data-id="252">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="253" style="color:#06b6d4 !important;">Outcome</h4>
+<ul class="text-textSecondary text-sm space-y-1" data-id="254" style="color:#cbd5e1 !important;">
+<li class="flex items-start gap-2" data-id="255"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> Improved data accessibility for analytics and reporting teams</li>
+<li class="flex items-start gap-2" data-id="257"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> Established repeatable data governance practices supporting AI-ready architecture</li>
+<li class="flex items-start gap-2" data-id="259"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> Team consistently adapts to evolving business needs while delivering valuable features on schedule — maintaining stakeholder trust and roadmap momentum</li>
+</ul>
+</div>
+<div data-id="261">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="262" style="color:#06b6d4 !important;">Tools &amp; Stack</h4>
+<div class="flex flex-wrap gap-2" data-id="263">
+<span class="tag" data-id="264">Azure Databricks</span>
+<span class="tag" data-id="265">Snowflake</span>
+<span class="tag" data-id="266">Tableau</span>
+<span class="tag" data-id="267">ServiceNow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: Enterprise BI Reporting -->
+<div class="glass-card overflow-hidden cursor-pointer" data-accordion="" data-id="268" style="transform:none;">
+<div class="p-6 md:p-8" data-accordion-trigger="" data-id="269">
+<div class="flex items-start justify-between gap-4" data-id="270">
+<div class="flex-1" data-id="271">
+<div class="flex flex-wrap gap-2 mb-3" data-id="272">
+<span class="tag" data-id="273">Business Intelligence</span>
+<span class="tag" data-id="274">KPI Reporting</span>
+<span class="tag" data-id="275">Data Governance</span>
+</div>
+<div class="flex items-center gap-3 mb-3" data-id="276">
+<div class="portfolio-header-icon icon-chart" data-id="277">
+<span style="color: var(--accent-violet);; font-style:normal; line-height:1; display:inline-block;">📊</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-textPrimary" data-id="279" style="color:#f1f5f9 !important;">Enterprise BI Reporting &amp; Analytics Delivery</h3>
+</div>
+<p class="text-textSecondary text-sm md:text-base" data-id="280" style="color:#cbd5e1 !important;">Managed intake, prioritization, and delivery of BI reporting solutions for business partners — defining KPI dashboards, visualizations, and reporting logic that improved performance visibility and leadership decision-making.</p>
+</div>
+<div class="flex-shrink-0 mt-1" data-id="281">
+<span style="font-style:normal; line-height:1; display:inline-block;">▼</span>
+</div>
+</div>
+</div>
+<div class="accordion-content px-6 md:px-8 pb-6 md:pb-8" data-id="283">
+<div class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6" data-id="284" style="border-color: rgba(255,255,255,0.15);">
+<div data-id="285">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="286" style="color:#06b6d4 !important;">Approach</h4>
+<ul class="text-textSecondary text-sm space-y-1" data-id="287" style="color:#cbd5e1 !important;">
+<li class="flex items-start gap-2" data-id="288"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Managed report request intake → requirements validation → development handoff</li>
+<li class="flex items-start gap-2" data-id="290"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Stakeholder review and iterative refinement</li>
+<li class="flex items-start gap-2" data-id="292"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Cross-functional alignment across business, development, and QA teams</li>
+</ul>
+</div>
+<div data-id="294">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="295" style="color:#06b6d4 !important;">Outcome</h4>
+<ul class="text-textSecondary text-sm space-y-1" data-id="296" style="color:#cbd5e1 !important;">
+<li class="flex items-start gap-2" data-id="297"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> Improved reporting consistency through Tableau governance</li>
+<li class="flex items-start gap-2" data-id="299"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> 98% on-time delivery on data warehouse project</li>
+</ul>
+</div>
+<div data-id="301">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="302" style="color:#06b6d4 !important;">Tools &amp; Stack</h4>
+<div class="flex flex-wrap gap-2" data-id="303">
+<span class="tag" data-id="304">Tableau</span>
+<span class="tag" data-id="305">ServiceNow</span>
+<span class="tag" data-id="306">SQL</span>
+<span class="tag" data-id="307">Excel</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3: Retail Accounting Automation -->
+<div class="glass-card overflow-hidden cursor-pointer" data-accordion="" data-id="308" style="transform:none;">
+<div class="p-6 md:p-8" data-accordion-trigger="" data-id="309">
+<div class="flex items-start justify-between gap-4" data-id="310">
+<div class="flex-1" data-id="311">
+<div class="flex flex-wrap gap-2 mb-3" data-id="312">
+<span class="tag" data-id="313">Process Automation</span>
+<span class="tag" data-id="314">Systems Migration</span>
+<span class="tag" data-id="315">Enterprise Scale</span>
+</div>
+<div class="flex items-center gap-3 mb-3" data-id="316">
+<div class="portfolio-header-icon icon-data" data-id="317">
+<span style="color: var(--accent-indigo);; font-style:normal; line-height:1; display:inline-block;">⚡</span>
+<span style="color: var(--accent-cyan);; font-style:normal; line-height:1; display:inline-block;">❄️</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-textPrimary" data-id="320" style="color:#f1f5f9 !important;">Retail Accounting Automation &amp; Systems Modernization</h3>
+</div>
+<p class="text-textSecondary text-sm md:text-base" data-id="321" style="color:#cbd5e1 !important;">Managed retail accounting system projects and reporting automation at Valero Energy over 12+ years, eliminating 90% of manual processes and delivering a $250K COBOL-to-SQL/.NET migration with SAP integration.</p>
+</div>
+<div class="flex-shrink-0 mt-1" data-id="322">
+<span style="font-style:normal; line-height:1; display:inline-block;">▼</span>
+</div>
+</div>
+</div>
+<div class="accordion-content px-6 md:px-8 pb-6 md:pb-8" data-id="324">
+<div class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6" data-id="325" style="border-color: rgba(255,255,255,0.15);">
+<div data-id="326">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="327" style="color:#06b6d4 !important;">Key Actions</h4>
+<ul class="text-textSecondary text-sm space-y-1" data-id="328" style="color:#cbd5e1 !important;">
+<li class="flex items-start gap-2" data-id="329"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Automated accounting workflows through database design and reporting enhancements</li>
+<li class="flex items-start gap-2" data-id="331"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Delivered COBOL-to-SQL/.NET migration with SAP integration</li>
+<li class="flex items-start gap-2" data-id="333"><span style="font-style:normal; line-height:1; display:inline-block;">✔</span> Created training environment for 10K-employee nationwide rollout</li>
+</ul>
+</div>
+<div data-id="335">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="336" style="color:#06b6d4 !important;">Outcome</h4>
+<ul class="text-textSecondary text-sm space-y-1" data-id="337" style="color:#cbd5e1 !important;">
+<li class="flex items-start gap-2" data-id="338"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> 90% manual process reduction</li>
+<li class="flex items-start gap-2" data-id="340"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> $250K migration delivered successfully</li>
+<li class="flex items-start gap-2" data-id="342"><span style="font-style:normal; line-height:1; display:inline-block;">📈</span> Enterprise-wide operational reporting for management</li>
+</ul>
+</div>
+<div data-id="344">
+<h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider" data-id="345" style="color:#06b6d4 !important;">Tools &amp; Stack</h4>
+<div class="flex flex-wrap gap-2" data-id="346">
+<span class="tag" data-id="347">SQL</span>
+<span class="tag" data-id="348">.NET</span>
+<span class="tag" data-id="349">SAP</span>
+<span class="tag" data-id="350">COBOL</span>
+<span class="tag" data-id="351">Excel</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RECOGNITION SECTION -->
+<section class="py-20 md:py-32 px-4 md:px-8" data-id="352" id="recognition">
+<div class="max-w-7xl mx-auto reveal" data-id="353">
+<div class="text-center mb-12" data-id="354">
+<h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2" data-id="355">Recognition &amp; Credentials</h2>
+<div class="section-divider" data-id="356"></div>
+</div>
+<div class="relative" data-id="357">
+<!-- Carousel Arrows -->
+<div class="flex justify-end gap-2 mb-6" data-id="358">
+<button aria-label="Previous" class="carousel-arrow" data-id="359" id="carousel-prev">
+<span style="font-style:normal; line-height:1; display:inline-block;">●</span>
+</button>
+<button aria-label="Next" class="carousel-arrow" data-id="361" id="carousel-next">
+<span style="font-style:normal; line-height:1; display:inline-block;">●</span>
+</button>
+</div>
+<div class="carousel-track flex gap-6 overflow-x-auto pb-4" data-id="363" id="carousel-track" style="scroll-snap-type: x mandatory;">
+<div class="credential-card glass-card p-6 flex-shrink-0" data-id="364" style="scroll-snap-align: start; transform:none;">
+<div class="text-4xl mb-4" data-id="365">🏅</div>
+<h3 class="font-bold text-lg mb-1 text-textPrimary" data-id="366" style="color:#f1f5f9 !important;">Certified Scrum Product Owner (CSPO)</h3>
+<p class="text-textSecondary text-sm" data-id="367" style="color:#cbd5e1 !important;">Scrum Alliance</p>
+<p class="text-textSecondary text-xs mt-1" data-id="368" style="color:#cbd5e1 !important;">Issued Nov 2024</p>
+</div>
+<div class="credential-card glass-card p-6 flex-shrink-0" data-id="369" style="scroll-snap-align: start; transform:none;">
+<div class="text-4xl mb-4" data-id="370">🎓</div>
+<h3 class="font-bold text-lg mb-1 text-textPrimary" data-id="371" style="color:#f1f5f9 !important;">Certified Scrum Master (CSM)</h3>
+<p class="text-textSecondary text-sm" data-id="372" style="color:#cbd5e1 !important;">Scrum Alliance</p>
+<p class="text-textSecondary text-xs mt-1" data-id="373" style="color:#cbd5e1 !important;">Issued Sep 2024</p>
+</div>
+<div class="credential-card glass-card p-6 flex-shrink-0" data-id="374" style="scroll-snap-align: start; transform:none;">
+<div class="text-4xl mb-4" data-id="375">🤖</div>
+<h3 class="font-bold text-lg mb-1 text-textPrimary" data-id="376" style="color:#f1f5f9 !important;">Professional Scrum Master (PSM)</h3>
+<p class="text-textSecondary text-sm" data-id="377" style="color:#cbd5e1 !important;">Scrum.org</p>
+<p class="text-textSecondary text-xs mt-1" data-id="378" style="color:#cbd5e1 !important;">Issued Aug 2024</p>
+</div>
+<div class="credential-card glass-card p-6 flex-shrink-0" data-id="379" style="scroll-snap-align: start; transform:none;">
+<div class="text-4xl mb-4" data-id="380">☁️</div>
+<h3 class="font-bold text-lg mb-1 text-textPrimary" data-id="381" style="color:#f1f5f9 !important;">Microsoft Certified: Azure Fundamentals</h3>
+<p class="text-textSecondary text-sm" data-id="382" style="color:#cbd5e1 !important;">Microsoft</p>
+<p class="text-textSecondary text-xs mt-1" data-id="383" style="color:#cbd5e1 !important;">Issued Jul 2024</p>
+</div>
+<div class="credential-card glass-card p-6 flex-shrink-0" data-id="384" style="scroll-snap-align: start; transform:none;">
+<div class="text-4xl mb-4" data-id="385">📊</div>
+<h3 class="font-bold text-lg mb-1 text-textPrimary" data-id="386" style="color:#f1f5f9 !important;">Certified Business Analysis Professional (CBAP)</h3>
+<p class="text-textSecondary text-sm" data-id="387" style="color:#cbd5e1 !important;">IIBA</p>
+<p class="text-textSecondary text-xs mt-1" data-id="388" style="color:#cbd5e1 !important;">Issued Jan 2019 · Valid through Jan 2028</p>
+</div>
+<div class="credential-card glass-card p-6 flex-shrink-0" data-id="389" style="scroll-snap-align: start; transform:none;">
+<div class="text-4xl mb-4" data-id="390">🏆</div>
+<h3 class="font-bold text-lg mb-1 text-textPrimary" data-id="391" style="color:#f1f5f9 !important;">IT Management &amp; Leadership Professional (ITMLP)</h3>
+<p class="text-textSecondary text-sm" data-id="392" style="color:#cbd5e1 !important;">IT Management and Leadership Institute</p>
+<p class="text-textSecondary text-xs mt-1" data-id="393" style="color:#cbd5e1 !important;">Issued Mar 2021</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="py-20 md:py-32 px-4 md:px-8" data-id="394" id="contact">
+<div class="max-w-3xl mx-auto text-center reveal" data-id="395">
+<h2 class="text-3xl md:text-5xl font-bold gradient-text mb-4" data-id="396">Let's Build Data Products That Matter</h2>
+<div class="section-divider" data-id="397"></div>
+<p class="text-textSecondary text-lg mb-10 max-w-xl mx-auto" data-id="398" style="color:#cbd5e1 !important;">Open to senior product and data leadership roles where cloud data strategy meets business impact.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8" data-id="399">
+<a class="btn-pill btn-linkedin" data-id="400" href="https://www.linkedin.com/in/christan-franklin-cbap-92885723/" id="linkedin-btn" rel="noopener noreferrer" target="_blank">
+<span style="font-style:normal; line-height:1; display:inline-block;">🔗</span>
                         Connect on LinkedIn
                     </a>
-                    <a data-id="392" href="mailto:christanfranklin7@gmail.com" class="btn-pill btn-primary" id="contact-mailto-btn">
-                        <i data-id="393" data-lucide="mail" class="w-4 h-4"></i>
+<a class="btn-pill btn-primary" data-id="402" href="mailto:christanfranklin7@gmail.com" id="contact-mailto-btn">
+<span style="font-style:normal; line-height:1; display:inline-block;">✉️</span>
                         Get in Touch
                     </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer data-id="394" class="border-t border-border py-8 px-4 md:px-8">
-        <div data-id="395" class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p data-id="396" class="text-textSecondary text-sm text-center md:text-left">© 2026 Christan Franklin — Data Product Leadership & Analytics Impact Portfolio</p>
-            <p data-id="397" class="text-textSecondary text-xs">Made by Copilot</p>
-        </div>
-    </footer>
-
-    <script>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="border-t border-border py-8 px-4 md:px-8" data-id="404">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4" data-id="405">
+<p class="text-textSecondary text-sm text-center md:text-left" data-id="406" style="color:#cbd5e1 !important;">© 2026 Christan Franklin — Data Product Leadership &amp; Analytics Impact Portfolio</p>
+<p class="text-textSecondary text-xs" data-id="407" style="color:#cbd5e1 !important;">Made by Copilot</p>
+</div>
+</footer>
+<script>
     (function() {
         // === LUCIDE ICONS ===
         if (typeof lucide !== "undefined" && typeof lucide.createIcons === "function") {
