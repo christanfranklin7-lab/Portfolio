@@ -553,6 +553,57 @@
         color: #22d3ee;
         border-bottom-color: #22d3ee;
       }
+
+      /* ===== GITHUB PAGES FIX: Explicit colors for Featured Initiatives ===== */
+      #portfolio h2,
+      #portfolio h3,
+      #portfolio h4 { color: #f1f5f9 !important; }
+
+      #portfolio p,
+      #portfolio li,
+      #portfolio .text-textSecondary,
+      #portfolio [class*="textSecondary"] { color: #cbd5e1 !important; }
+
+      #portfolio .text-textPrimary,
+      #portfolio [class*="textPrimary"] { color: #f1f5f9 !important; }
+
+      #portfolio .text-accent,
+      #portfolio [class*="text-accent"] { color: #06b6d4 !important; }
+
+      #portfolio .accordion-content p,
+      #portfolio .accordion-content li,
+      #portfolio .accordion-content span:not(.tag) { color: #cbd5e1 !important; }
+
+      #portfolio .accordion-content h4 { color: #06b6d4 !important; }
+
+      /* Ensure all sections use correct text colors */
+      #about p, #about li, #about .text-textSecondary { color: #cbd5e1 !important; }
+      #about h2, #about h3, #about h4, #about .text-textPrimary { color: #f1f5f9 !important; }
+      #expertise p, #expertise li, #expertise .text-textSecondary { color: #cbd5e1 !important; }
+      #expertise h2, #expertise h3, #expertise h4, #expertise .text-textPrimary { color: #f1f5f9 !important; }
+      #impact p, #impact li, #impact .text-textSecondary { color: #cbd5e1 !important; }
+      #impact h2, #impact h3, #impact .text-textPrimary { color: #f1f5f9 !important; }
+      #recognition p, #recognition li, #recognition .text-textSecondary { color: #cbd5e1 !important; }
+      #recognition h2, #recognition h3, #recognition h4, #recognition .text-textPrimary { color: #f1f5f9 !important; }
+      #contact p, #contact li, #contact .text-textSecondary { color: #cbd5e1 !important; }
+      #contact h2, #contact h3, #contact .text-textPrimary { color: #f1f5f9 !important; }
+
+      /* Body default text */
+      body { color: #f1f5f9 !important; }
+      /* ===== END GITHUB PAGES FIX ===== */
+
+      /* ===== STATIC DEPLOYMENT FIX: Explicit Tailwind custom color classes ===== */
+      .text-textPrimary  { color: #f1f5f9 !important; }
+      .text-textSecondary { color: #cbd5e1 !important; }
+      .text-accent       { color: #06b6d4 !important; }
+      .text-indigo       { color: #6366f1 !important; }
+      .text-violet       { color: #8b5cf6 !important; }
+      .border-border     { border-color: rgba(255,255,255,0.15) !important; }
+      .bg-surface        { background: rgba(255,255,255,0.08) !important; }
+      /* Ensure all body text defaults to light on dark background */
+      body, p, li, span, div { color: inherit; }
+      body { color: #f1f5f9; }
+      /* ===== END STATIC DEPLOYMENT FIX ===== */
     </style>
 </head>
 <body data-id="0">
