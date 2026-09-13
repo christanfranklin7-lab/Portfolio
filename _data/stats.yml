@@ -1,0 +1,41 @@
+# display — the string rendered into the HTML. Always the real figure.
+# count   — optional. If present, JS animates 0 → count on scroll, then
+#           restores the display string. Omit for figures a count-up would
+#           make nonsense of (like "45 → 2 days").
+
+hero:
+  - display: '45 <span class="arrow">&rarr;</span> 2 days'
+    label: Reporting lag, cut by moving from claims data to ADT and authorization data
+  - display: "$5M"
+    count: 5
+    prefix: "$"
+    suffix: "M"
+    label: Additional transition of care savings supported
+  - display: "20+"
+    count: 20
+    suffix: "+"
+    label: Stakeholders across business, data, and governance teams
+
+impact:
+  - display: "$5M"
+    count: 5
+    prefix: "$"
+    suffix: "M"
+    label: Additional transition of care savings supported by the current data product (Optum)
+  - display: '45 <span class="arrow">&rarr;</span> 2 days'
+    label: Reporting lag, cut by moving from lagging claims data to leading ADT and authorization data (Optum)
+  - display: '30+ <span class="arrow">&rarr;</span> 2 reports'
+    label: SSRS reports consolidated into two dashboards on a shared enterprise data set (Optum)
+  - display: "3+"
+    count: 3
+    suffix: "+"
+    label: Additional dashboards now fed by the enterprise data sets my team defines (Optum)
+  - display: "98%"
+    count: 98
+    suffix: "%"
+    label: On-time delivery achieved on data warehouse project (Optum)
+  - display: "$250K"
+    count: 250
+    prefix: "$"
+    suffix: "K"
+    label: COBOL-to-SQL/.NET accounting system migration delivered with SAP integration (Valero)
