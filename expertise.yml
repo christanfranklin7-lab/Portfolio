@@ -1,0 +1,47 @@
+- id: product
+  label: Product Management
+  items:
+    - title: Data Product Roadmaps
+      body: Owning the roadmap for Data Services & Analytics and for individual products within the portfolio.
+    - title: Backlog Creation & Prioritization
+      body: Sequencing work against stakeholder impact and delivery capacity across the data product portfolio.
+    - title: Data Product Requirements
+      body: Translating business objectives into source data needs, cloud data set design, and reporting logic.
+    - title: Acceptance Criteria & Scope Definition
+      body: Defining clear acceptance criteria, scope boundaries, and validation requirements for data deliverables.
+    - title: Stakeholder Engagement
+      body: Serving as primary liaison across business partners, data warehouse teams, analytics, and data governance.
+    - title: Agile Delivery
+      body: Running product delivery with Agile and Scrum practices at enterprise scale. CSPO, CSM, and PSM certified.
+
+- id: data
+  label: Data & Analytics
+  items:
+    - title: Enterprise Data Set Design
+      body: Leading the team that gathers and defines the cloud data sets other dashboards and teams are built on.
+    - title: Azure Databricks
+      body: Leveraging Azure Databricks for scalable cloud data processing and analytics-ready infrastructure.
+    - title: Snowflake Data Strategy
+      body: Authoring Snowflake strategy documentation and cloud data set architectures for enterprise reporting.
+    - title: Lead vs. Lag Indicators
+      body: Moving reporting off lagging claims data and onto leading ADT and authorization signals.
+    - title: KPI Development & Dashboard Design
+      body: Defining KPI frameworks and dashboards that give leadership actionable visibility.
+    - title: Data Governance Frameworks
+      body: Establishing governance policies, quality standards, and reporting consistency across the organization.
+
+- id: ba
+  label: Business Analysis
+  items:
+    - title: Business Requirements & Functional Specs
+      body: Eliciting, documenting, and validating requirements and specifications for complex data initiatives.
+    - title: Intake & Prioritization
+      body: Managing reporting intake and prioritization to support resource planning and business visibility.
+    - title: Workflow Analysis & Process Improvement
+      body: Analyzing workflows and identifying automation and efficiency improvements across business operations.
+    - title: Tableau Reporting Governance
+      body: Establishing Tableau standards, governance practices, and visualization consistency across teams.
+    - title: ServiceNow Workflow Optimization
+      body: Optimizing intake workflows, request routing, and backlog management for data services teams.
+    - title: Executive Communication
+      body: Preparing executive-ready presentations, status reports, and strategic communications for leadership.

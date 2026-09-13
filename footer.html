@@ -1,0 +1,9 @@
+<footer class="py-10 px-4 md:px-8 border-t">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-textSecondary text-sm">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.data.profile.name }}</p>
+    <div class="flex items-center gap-5">
+      <a class="email-link" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      <a class="email-link" href="{{ site.data.profile.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</footer>

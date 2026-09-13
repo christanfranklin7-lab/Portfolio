@@ -1,0 +1,18 @@
+<section class="py-20 md:py-32 px-4 md:px-8" id="impact">
+  <div class="max-w-7xl mx-auto reveal">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2">Measurable Results</h2>
+      <div class="section-divider"></div>
+      <p class="text-textSecondary max-w-xl mx-auto">Quantified outcomes from data product delivery, reporting consolidation, and analytics leadership.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for stat in site.data.stats.impact %}
+      <div class="stat-card glass-card p-8 text-center cursor-default">
+        <div class="text-4xl md:text-5xl font-black gradient-text mb-3">{% include counter.html value=stat.value prefix=stat.prefix suffix=stat.suffix %}</div>
+        <p class="text-textSecondary text-sm">{{ stat.label }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

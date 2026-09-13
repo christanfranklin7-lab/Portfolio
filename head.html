@@ -1,0 +1,57 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_newlines }}" />
+  <meta name="author" content="{{ site.author }}" />
+
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_newlines }}" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: '#333399',
+            surface: 'rgba(255,255,255,0.08)',
+            surfaceHover: 'rgba(255,255,255,0.13)',
+            border: 'rgba(255,255,255,0.15)',
+            textPrimary: '#f1f5f9',
+            textSecondary: '#cbd5e1',
+            accent: '#06b6d4',
+            indigo: '#6366f1',
+            violet: '#8b5cf6'
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.data.profile.name }}",
+    "email": "mailto:{{ site.data.profile.email }}",
+    "jobTitle": "Lead Technical Product Manager",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "sameAs": ["{{ site.data.profile.linkedin }}"],
+    "knowsAbout": ["Product Management", "Healthcare Data", "Azure Databricks", "Snowflake", "Business Intelligence", "Data Governance"]
+  }
+  </script>
+</head>

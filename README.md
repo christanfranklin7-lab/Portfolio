@@ -1,70 +1,63 @@
-# Job Portfolio
+# Christan Franklin — Portfolio
 
-This repository contains an HTML/CSS job portfolio for showcasing projects, skills, and contact information.
+Jekyll site published with GitHub Pages at
+<https://christanfranklin7-lab.github.io/Portfolio/>
 
-## Overview
+## Editing content
 
-A simple, responsive portfolio built with plain HTML, CSS, and a small amount of JavaScript (if included). It's intended to be easy to host (GitHub Pages or any static hosting) and easy to customize.
+You should almost never need to touch HTML. All copy lives in `_data/`:
 
-## Features
+| File | What it controls |
+| --- | --- |
+| `_data/profile.yml` | Name, headline, about paragraph, email, LinkedIn, resume link, the three value props |
+| `_data/stats.yml` | Hero stats and the Measurable Results grid |
+| `_data/expertise.yml` | The three competency tabs and their cards |
+| `_data/portfolio.yml` | Featured initiatives — summary, actions, outcomes, stack |
+| `_data/credentials.yml` | Certifications |
+| `_data/nav.yml` | Navigation links |
 
-- Responsive layout for desktop and mobile
-- Project gallery with links and descriptions
-- About / Skills section
-- Contact information and links to social profiles
+Edit a YAML file, commit, and GitHub Pages rebuilds in about a minute.
 
-## Demo
+To add a new certification, append to `_data/credentials.yml`:
 
-If you enable GitHub Pages for this repository, the site will be available at:
+```yaml
+- icon: "🏅"
+  title: New Certification Name
+  issuer: Issuing Body
+  date: Issued Jan 2027
+```
 
-https://christanfranklin7-lab.github.io/Portfolio/
+## Structure
 
-(If you use a different branch or folder for Pages, update the URL accordingly.)
+```
+_config.yml          site settings, baseurl
+index.html           front matter + section includes
+_layouts/default.html   page shell
+_includes/           head, nav, hero, about, expertise, impact,
+                     portfolio, recognition, contact, footer, counter
+_data/               all editable content
+assets/css/main.css  all styling
+assets/js/main.js    counters, tabs, accordions, nav, particles
+Christan-Franklin-Resume.pdf
+```
 
-## How to view locally
+## Local preview
 
-1. Clone the repository:
+```
+bundle install
+bundle exec jekyll serve
+```
 
-   git clone https://github.com/christanfranklin7-lab/Portfolio.git
+Then open <http://localhost:4000/Portfolio/>.
 
-2. Open `index.html` in your browser, or serve the folder with a simple static server:
+## Publishing
 
-   - Using Python 3:
-     
-     python -m http.server 8000
+Settings → Pages → Source: **Deploy from a branch** → `main` / `/ (root)`.
+GitHub runs Jekyll automatically. No build action required.
 
-   - Using VS Code Live Server extension: Right-click `index.html` → "Open with Live Server".
+## Notes
 
-Then open http://localhost:8000 in your browser.
-
-## Project structure
-
-- index.html — main landing page
-- css/ — stylesheets
-- js/ — JavaScript (optional)
-- images/ — project screenshots and assets
-- README.md — this file
-
-Adjust paths if your structure differs.
-
-## Customize
-
-- Replace text and images in `index.html` to show your projects and experience.
-- Update `css/` to change colors, fonts, and layout.
-- Add or remove projects in the projects/gallery section.
-
-## Deploy
-
-- GitHub Pages: enable Pages in repository settings and choose the branch (typically `main`) and root folder.
-- Netlify / Vercel / other static hosts: follow their deploy settings and point to the repository.
-
-## License
-
-Choose a license if you'd like to make this project open source. Add a `LICENSE` file.
-
-## Contact
-
-- Email: your-email@example.com
-- GitHub: https://github.com/christanfranklin7-lab
-
-Replace the contact details with the ones you prefer.
+- `baseurl` in `_config.yml` is `/Portfolio`. If you ever rename the repo or
+  move to a custom domain, update it or links will break.
+- Statistic numbers are rendered into the HTML and animated up to from zero by
+  JavaScript. If the script fails, visitors still see the real figures.

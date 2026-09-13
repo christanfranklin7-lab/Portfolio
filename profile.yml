@@ -1,0 +1,34 @@
+name: Christan Franklin
+initials: CF
+title: "Lead Technical Product Manager — Data Products, Reporting & Analytics"
+headline: "Turning Complex Data Needs into Cloud Products That Drive Decisions"
+location: San Antonio, TX · Remote
+
+# NOTE: your resume uses Christy.franklin@live.com. Pick ONE and use it everywhere.
+email: christanfranklin7@gmail.com
+linkedin: https://www.linkedin.com/in/christan-franklin-cbap-92885723/
+
+# Resume lives in the repo root. Direct link — no Google viewer.
+resume_url: /Portfolio/Christan-Franklin-Resume.pdf
+
+about: >-
+  I own roadmap, backlog, and delivery for enterprise cloud data products on
+  Azure Databricks and Snowflake. At Optum I shipped the Transition of Care
+  dashboard, the first product to move the organization from lagging claims data
+  to leading ADT and authorization signals — cutting reporting lag from 45 days
+  to 2 and widening coverage from patients with approved claims to all patient
+  visits. I partner with more than twenty stakeholders across business, data
+  warehouse, analytics, and governance teams to turn needs into shipped products.
+  My experience spans healthcare technology, retail, energy, and media.
+
+seeking: >-
+  Open to remote product management roles in healthcare where cloud data strategy
+  meets business impact.
+
+value_props:
+  - title: Data Product Roadmaps
+    body: Owning roadmap, backlog creation, and prioritization for a portfolio of enterprise data products.
+  - title: Azure Databricks & Snowflake
+    body: Leading definition of the enterprise data sets that downstream dashboards and teams are built on.
+  - title: KPI & Dashboard Design
+    body: Defining the KPI frameworks and visualizations leadership uses to track performance and identify trends.

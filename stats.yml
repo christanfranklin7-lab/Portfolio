@@ -1,0 +1,36 @@
+# The rendered HTML contains the REAL number. JavaScript animates up to it.
+# If the script never runs, a visitor still sees the true figure.
+
+hero:
+  - value: 5
+    prefix: "$"
+    suffix: "M"
+    label: Transition of care savings supported
+  - value: 45
+    suffix: " → 2"
+    label: Reporting lag cut from 45 days to 2
+  - value: 20
+    suffix: "+"
+    label: Stakeholders across business, data, and governance
+
+impact:
+  - value: 5
+    prefix: "$"
+    suffix: "M"
+    label: Additional transition of care savings supported by the current data product (Optum)
+  - value: 45
+    suffix: " → 2"
+    label: Reporting lag in days, cut by moving from claims data to ADT and authorization data (Optum)
+  - value: 30
+    suffix: "+ → 2"
+    label: SSRS reports consolidated into two dashboards on a shared enterprise data set (Optum)
+  - value: 3
+    suffix: "+"
+    label: Additional dashboards now fed by the enterprise data sets my team defines (Optum)
+  - value: 98
+    suffix: "%"
+    label: On-time delivery achieved on data warehouse project (Optum)
+  - value: 250
+    prefix: "$"
+    suffix: "K"
+    label: COBOL-to-SQL/.NET accounting system migration delivered with SAP integration (Valero)

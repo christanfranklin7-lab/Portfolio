@@ -1,0 +1,61 @@
+- title: Transition of Care — From Lagging Claims to Leading Signals
+  tags: [Cloud Data Products, Azure Databricks & Snowflake, Healthcare]
+  summary: >-
+    Owned the roadmap and delivery for the first Optum data product to move
+    reporting off lagging claims data and onto leading ADT and authorization
+    signals — cutting reporting lag from 45 days to 2 and widening coverage from
+    patients with approved claims to all patient visits.
+  sections:
+    - heading: Key Actions
+      items:
+        - Built the product roadmap and owned backlog creation and prioritization
+        - Defined source data needs, cloud data set design, reporting logic, and acceptance criteria
+        - Led the team defining the enterprise data sets underneath the product
+        - Coordinated delivery across business, data warehouse, analytics, and governance teams
+    - heading: Outcome
+      items:
+        - Reporting lag reduced from 45 days to 2
+        - Coverage widened from approved-claim patients only to all patient visits
+        - Supports $5M in additional transition of care savings
+        - Enterprise data sets now feed at least three additional dashboards across IT and business teams
+  stack: [Azure Databricks, Snowflake, Tableau, ServiceNow]
+
+- title: Enterprise Reporting Consolidation & BI Delivery
+  tags: [Business Intelligence, KPI Reporting, Data Governance]
+  summary: >-
+    Consolidated a sprawling report estate onto a shared enterprise data set, and
+    managed intake, prioritization, and delivery of BI reporting for business
+    partners across the organization.
+  sections:
+    - heading: Approach
+      items:
+        - Managed report request intake, requirements validation, and development handoff
+        - Defined a shared enterprise data set to replace duplicated report logic
+        - Established Tableau policy and procedure standards to strengthen governance
+        - Cross-functional alignment across business, development, and QA teams
+    - heading: Outcome
+      items:
+        - 30+ SSRS reports consolidated into two dashboards on one governed data set
+        - One source of truth for stakeholders asking the same questions
+        - 98% on-time delivery on data warehouse project
+        - ICD-9 to ICD-10 reporting conversion completed with zero production errors
+  stack: [Tableau, ServiceNow, SQL, Snowflake]
+
+- title: Retail Accounting Automation & Systems Modernization
+  tags: [Process Automation, Systems Migration, Enterprise Scale]
+  summary: >-
+    Managed retail accounting system projects and reporting automation at Valero
+    Energy, eliminating 90% of manual processes and delivering a $250K
+    COBOL-to-SQL/.NET migration with SAP integration.
+  sections:
+    - heading: Key Actions
+      items:
+        - Automated accounting workflows through database design and reporting enhancements
+        - Delivered COBOL-to-SQL/.NET migration with SAP integration
+        - Created training environment for a 10,000-employee nationwide rollout
+    - heading: Outcome
+      items:
+        - 90% manual process reduction
+        - $250K migration delivered with SAP integration
+        - Enterprise-wide operational reporting for management
+  stack: [SQL, .NET, SAP, COBOL]

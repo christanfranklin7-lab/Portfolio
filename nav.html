@@ -1,0 +1,28 @@
+<div id="mobile-menu-overlay">
+  <button aria-label="Close menu" class="absolute top-6 right-6 p-3" id="mobile-close-btn">
+    <span aria-hidden="true">&#10005;</span>
+  </button>
+  {% for item in site.data.nav %}
+  <a class="mobile-nav-link" data-mobile-nav href="{{ item.href }}">{{ item.label }}</a>
+  {% endfor %}
+</div>
+
+<nav id="main-nav">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
+    <a class="text-lg font-bold gradient-text tracking-tight" href="#hero">{{ site.data.profile.initials }}</a>
+
+    <div class="hidden md:flex items-center gap-1">
+      {% for item in site.data.nav %}{% unless item.label == 'Contact' %}
+      <a class="nav-link" data-nav-link href="{{ item.href }}">{{ item.label }}</a>
+      {% endunless %}{% endfor %}
+    </div>
+
+    <div class="hidden md:block">
+      <a class="btn-pill btn-secondary text-sm" href="{{ site.data.profile.resume_url }}" download>Download Resume</a>
+    </div>
+
+    <button aria-label="Open menu" class="md:hidden p-2" id="mobile-menu-btn">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+  </div>
+</nav>

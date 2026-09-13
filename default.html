@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <div class="toast" id="toast-msg"></div>
+
+  <button aria-label="Back to top" id="back-to-top">
+    <span aria-hidden="true">&#9650;</span>
+  </button>
+
+  {% include nav.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>

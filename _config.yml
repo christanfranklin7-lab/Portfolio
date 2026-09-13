@@ -1,0 +1,19 @@
+title: "Christan Franklin — Data Product Leadership"
+description: >-
+  Christan Franklin — product management and business analysis leader
+  specializing in cloud data products, Azure Databricks, Snowflake, BI reporting,
+  and analytics delivery at enterprise scale.
+author: Christan Franklin
+url: "https://christanfranklin7-lab.github.io"
+baseurl: "/Portfolio"
+
+# Build
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
