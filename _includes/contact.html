@@ -1,13 +1,13 @@
-<section class="py-20 md:py-32 px-4 md:px-8" id="contact">
-  <div class="max-w-3xl mx-auto text-center reveal">
-    <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2">Let's Build Data Products That Matter</h2>
-    <div class="section-divider"></div>
-    <p class="text-textSecondary mb-10 max-w-xl mx-auto">{{ site.data.profile.seeking }}</p>
+<section id="contact">
+  <div class="wrap wrap-narrow reveal contact-inner">
+    <h2 class="contact-title">Let's build data products that matter</h2>
+    <div class="section-rule"></div>
+    <p class="section-intro">{{ site.data.profile.seeking }}</p>
 
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a class="btn-pill btn-linkedin" href="{{ site.data.profile.linkedin }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-      <a class="btn-pill btn-primary" href="mailto:{{ site.data.profile.email }}">Get in Touch</a>
-      <a class="btn-pill btn-secondary" href="{{ site.data.profile.resume_url }}" download>Download Resume</a>
+    <div class="hero-ctas contact-ctas">
+      <a class="btn-pill btn-primary" href="mailto:{{ site.data.profile.email }}">Get in touch</a>
+      <a class="btn-pill btn-secondary" href="{{ site.data.profile.linkedin }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+      <a class="btn-pill btn-secondary" href="{{ site.data.profile.resume_url }}" download>Download resume</a>
     </div>
   </div>
 </section>

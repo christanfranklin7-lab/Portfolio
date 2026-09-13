@@ -1,35 +1,27 @@
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden" id="hero">
-  <canvas id="particle-canvas" aria-hidden="true"></canvas>
-
-  <div class="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto">
-    <div class="mb-8 flex justify-center">
-      <div class="glow-ring">
-        <div class="name-badge">{{ site.data.profile.name }}</div>
-      </div>
+<section id="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">
+      <span class="eyebrow-dot" aria-hidden="true"></span>
+      <span>{{ site.data.profile.name }}</span>
     </div>
 
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-5 gradient-text" id="hero-headline" data-headline="{{ site.data.profile.headline }}" style="line-height:1.1;">{{ site.data.profile.headline }}</h1>
+    <h1 class="hero-headline">{{ site.data.profile.headline }}</h1>
 
-    <p class="text-base md:text-lg mb-3 text-textPrimary font-semibold">{{ site.data.profile.title }}</p>
-    <p class="text-base md:text-lg mb-10 max-w-2xl mx-auto text-textSecondary" id="hero-sub">{{ site.data.profile.seeking }}</p>
+    <p class="hero-role">{{ site.data.profile.title }}</p>
+    <p class="hero-seeking">{{ site.data.profile.seeking }}</p>
 
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" id="hero-ctas">
-      <a class="btn-pill btn-primary" href="#impact">View My Impact</a>
-      <a class="btn-pill btn-secondary" href="#portfolio">Explore Work</a>
-      <a class="btn-pill btn-secondary" href="{{ site.data.profile.resume_url }}" download>Download Resume</a>
-    </div>
-
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8" id="hero-stats">
-      {% for stat in site.data.stats.hero %}
-      <div class="floating-stat glass-card px-6 py-4 text-center cursor-default">
-        <div class="text-2xl md:text-3xl font-black gradient-text">{% include counter.html value=stat.value prefix=stat.prefix suffix=stat.suffix %}</div>
-        <div class="text-xs text-textSecondary mt-1">{{ stat.label }}</div>
-      </div>
-      {% endfor %}
+    <div class="hero-ctas">
+      <a class="btn-pill btn-primary" href="{{ site.data.profile.resume_url }}" download>Download resume</a>
+      <a class="btn-pill btn-secondary" href="#impact">View my impact</a>
     </div>
   </div>
 
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-textSecondary text-xs" id="scroll-hint">
-    <span>Scroll to explore</span>
+  <div class="hero-stats">
+    {% for stat in site.data.stats.hero %}
+    <div class="hero-stat">
+      <div class="stat-figure">{% include counter.html display=stat.display count=stat.count prefix=stat.prefix suffix=stat.suffix %}</div>
+      <p class="stat-caption">{{ stat.label }}</p>
+    </div>
+    {% endfor %}
   </div>
 </section>

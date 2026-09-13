@@ -1,39 +1,39 @@
-<section class="py-20 md:py-32 px-4 md:px-8" id="portfolio">
-  <div class="max-w-5xl mx-auto reveal">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2">Featured Initiatives</h2>
-      <div class="section-divider"></div>
+<section id="portfolio">
+  <div class="wrap wrap-narrow reveal">
+    <div class="section-head">
+      <p class="section-label">Featured Initiatives</p>
+      <div class="section-rule"></div>
     </div>
 
-    <div class="space-y-6">
+    <div class="case-list">
       {% for project in site.data.portfolio %}
-      <div class="glass-card overflow-hidden" data-accordion>
-        <button class="w-full text-left p-6 md:p-8" data-accordion-trigger aria-expanded="false">
-          <div class="flex items-start justify-between gap-4">
-            <div class="flex-1">
-              <div class="flex flex-wrap gap-2 mb-3">
+      <div class="panel case" data-accordion>
+        <button class="case-trigger" data-accordion-trigger aria-expanded="false">
+          <div class="case-head">
+            <div class="case-head-main">
+              <div class="tag-row">
                 {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
               </div>
-              <h3 class="text-xl md:text-2xl font-bold text-textPrimary mb-3">{{ project.title }}</h3>
-              <p class="text-textSecondary text-sm md:text-base">{{ project.summary }}</p>
+              <h3 class="case-title">{{ project.title }}</h3>
+              <p class="case-summary">{{ project.summary }}</p>
             </div>
-            <span class="accordion-chevron flex-shrink-0 mt-1" aria-hidden="true">&#9660;</span>
+            <span class="chevron" aria-hidden="true">&#9660;</span>
           </div>
         </button>
 
-        <div class="accordion-content px-6 md:px-8 pb-6 md:pb-8">
-          <div class="border-t border-border pt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="accordion-content">
+          <div class="case-detail">
             {% for section in project.sections %}
             <div>
-              <h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">{{ section.heading }}</h4>
-              <ul class="detail-list text-textSecondary text-sm space-y-2">
+              <p class="detail-label">{{ section.heading }}</p>
+              <ul class="detail-list">
                 {% for item in section.items %}<li>{{ item }}</li>{% endfor %}
               </ul>
             </div>
             {% endfor %}
             <div>
-              <h4 class="font-semibold text-accent text-sm mb-2 uppercase tracking-wider">Tools &amp; Stack</h4>
-              <div class="flex flex-wrap gap-2">
+              <p class="detail-label">Tools &amp; Stack</p>
+              <div class="tag-row">
                 {% for tool in project.stack %}<span class="tag">{{ tool }}</span>{% endfor %}
               </div>
             </div>

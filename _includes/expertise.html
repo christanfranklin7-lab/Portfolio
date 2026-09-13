@@ -1,22 +1,22 @@
-<section class="py-20 md:py-32 px-4 md:px-8" id="expertise">
-  <div class="max-w-7xl mx-auto reveal">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2">Core Competencies</h2>
-      <div class="section-divider"></div>
+<section id="expertise">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="section-label">Core Competencies</p>
+      <div class="section-rule"></div>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-3 mb-10" role="tablist">
+    <div class="tab-row" role="tablist">
       {% for group in site.data.expertise %}
-      <button class="tab-btn-custom{% if forloop.first %} active{% endif %}" role="tab" aria-controls="panel-{{ group.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" data-expertise-tab="{{ group.id }}">{{ group.label }}</button>
+      <button class="tab-btn{% if forloop.first %} active{% endif %}" role="tab" aria-controls="panel-{{ group.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" data-expertise-tab="{{ group.id }}">{{ group.label }}</button>
       {% endfor %}
     </div>
 
     {% for group in site.data.expertise %}
-    <div class="tab-panel{% if forloop.first %} active{% endif %} grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-expertise-panel id="panel-{{ group.id }}" role="tabpanel">
+    <div class="tab-panel{% if forloop.first %} active{% endif %}" data-expertise-panel id="panel-{{ group.id }}" role="tabpanel">
       {% for item in group.items %}
-      <div class="expertise-card">
-        <h4 class="font-semibold text-textPrimary mb-2">{{ item.title }}</h4>
-        <p class="text-textSecondary text-sm">{{ item.body }}</p>
+      <div class="panel">
+        <h4 class="panel-title">{{ item.title }}</h4>
+        <p class="panel-body">{{ item.body }}</p>
       </div>
       {% endfor %}
     </div>

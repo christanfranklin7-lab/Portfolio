@@ -1,25 +1,18 @@
-<section class="py-20 md:py-32 px-4 md:px-8 max-w-7xl mx-auto" id="about">
-  <div class="reveal">
-    <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-      <div class="flex-shrink-0 flex justify-center">
-        <div class="glow-ring">
-          <div class="avatar-circle">{{ site.data.profile.initials }}</div>
-        </div>
-      </div>
-
-      <div class="flex-1 text-center md:text-left">
-        <h2 class="text-3xl md:text-4xl font-bold mb-2 gradient-text">About</h2>
-        <div class="section-divider mx-auto md:mx-0 mb-6" style="margin-top:8px;"></div>
-        <p class="text-textSecondary leading-relaxed text-base md:text-lg max-w-2xl">{{ site.data.profile.about }}</p>
-      </div>
+<section id="about">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="section-label">About</p>
+      <div class="section-rule"></div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
+    <p class="lede">{{ site.data.profile.about }}</p>
+
+    <div class="prop-grid">
       {% for prop in site.data.profile.value_props %}
-      <div class="glass-card p-6 cursor-default">
+      <div class="panel">
         <div class="prop-rule" aria-hidden="true"></div>
-        <h3 class="font-bold text-lg mb-2 text-textPrimary">{{ prop.title }}</h3>
-        <p class="text-textSecondary text-sm">{{ prop.body }}</p>
+        <h3 class="panel-title">{{ prop.title }}</h3>
+        <p class="panel-body">{{ prop.body }}</p>
       </div>
       {% endfor %}
     </div>

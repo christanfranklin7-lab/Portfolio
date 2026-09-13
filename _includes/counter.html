@@ -1,1 +1,5 @@
-<span class="counter" data-counter data-target="{{ include.value }}" data-prefix="{{ include.prefix }}" data-suffix="{{ include.suffix }}">{{ include.prefix }}{{ include.value }}{{ include.suffix }}</span>
+{%- if include.count -%}
+<span class="counter" data-counter data-target="{{ include.count }}" data-prefix="{{ include.prefix }}" data-suffix="{{ include.suffix }}" data-display="{{ include.display | escape }}">{{ include.display }}</span>
+{%- else -%}
+<span>{{ include.display }}</span>
+{%- endif -%}

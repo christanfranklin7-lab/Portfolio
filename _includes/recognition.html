@@ -1,17 +1,17 @@
-<section class="py-20 md:py-32 px-4 md:px-8" id="recognition">
-  <div class="max-w-7xl mx-auto reveal">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-2">Certifications</h2>
-      <div class="section-divider"></div>
+<section id="recognition">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="section-label">Certifications</p>
+      <div class="section-rule"></div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="cred-grid">
       {% for cred in site.data.credentials %}
-      <div class="credential-card glass-card p-6">
+      <div class="panel">
         <div class="prop-rule" aria-hidden="true"></div>
-        <h3 class="font-bold text-textPrimary mb-1">{{ cred.title }}</h3>
-        <p class="text-textSecondary text-sm">{{ cred.issuer }}</p>
-        <p class="text-textSecondary text-xs mt-2 opacity-80">{{ cred.date }}</p>
+        <h3 class="panel-title">{{ cred.title }}</h3>
+        <p class="panel-body">{{ cred.issuer }}</p>
+        <p class="cred-date">{{ cred.date }}</p>
       </div>
       {% endfor %}
     </div>
