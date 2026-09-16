@@ -1,8 +1,10 @@
 - id: product
   label: Product Management
   items:
+    - title: Product Discovery
+      body: Working directly with Medical Directors to capture clinical goals, then assessing what the data can support and sequencing for fastest value.
     - title: Data Product Roadmaps
-      body: Owning the roadmap for Data Services & Analytics and for individual products within the portfolio.
+      body: Owning the roadmap for Data Services & Analytics and for individual products across a nine-product portfolio.
     - title: Backlog Creation & Prioritization
       body: Sequencing work against stakeholder impact and delivery capacity across the data product portfolio.
     - title: Data Product Requirements
@@ -27,8 +29,12 @@
       body: Moving reporting off lagging claims data and onto leading ADT and authorization signals.
     - title: KPI Development & Dashboard Design
       body: Defining KPI frameworks and dashboards that give leadership actionable visibility.
-    - title: Data Governance Frameworks
-      body: Establishing governance policies, quality standards, and reporting consistency across the organization.
+    - title: PHI & HIPAA Governance
+      body: Governing PHI handling and HIPAA requirements across the Transition of Care product and the wider portfolio.
+    - title: CMS Rule Alignment
+      body: Applying CMS rules to the definition of tracked clinical actions so reporting reflects them correctly.
+    - title: Quality & Risk Programs
+      body: HEDIS, Star Ratings, risk adjustment, Medicare Advantage, utilization management, and care management reporting.
 
 - id: ba
   label: Business Analysis

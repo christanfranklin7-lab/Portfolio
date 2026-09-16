@@ -6,19 +6,52 @@
     signals — cutting reporting lag from 45 days to 2 and widening coverage from
     patients with approved claims to all patient visits.
   sections:
+    - heading: Discovery
+      items:
+        - Met with Medical Directors to capture clinical goals and define what success looked like
+        - Assessed which of those goals the available data could actually support
+        - Sequenced the roadmap around what could be delivered quickly against the highest-value goals
+        - Refined through review sessions, letting stakeholder feedback drive each iteration
     - heading: Key Actions
       items:
         - Built the product roadmap and owned backlog creation and prioritization
         - Defined source data needs, cloud data set design, reporting logic, and acceptance criteria
         - Led the team defining the enterprise data sets underneath the product
         - Coordinated delivery across business, data warehouse, analytics, and governance teams
+    - heading: The Tradeoff
+      items:
+        - Chose not to blend claims data into the lead-indicator product, despite claims being the established source
+        - Keeping the sources separate meant every figure had one unambiguous origin, with no reconciliation ambiguity for Finance or Medical Directors
+        - It also meant admits and visits are captured whether or not a claim is ever paid — the care happened, so it counts
+        - The cost is that the product does not reconcile to settled claims totals; that comparison stays where it belongs, in the claims reporting
     - heading: Outcome
       items:
         - Reporting lag reduced from 45 days to 2
         - Coverage widened from approved-claim patients only to all patient visits
-        - Supports $5M in additional transition of care savings
+        - Finance reports $5M in additional transition of care savings this year
+        - Used by business teams, Medical Directors, Finance, and IT across Optum
         - Enterprise data sets now feed at least three additional dashboards across IT and business teams
   stack: [Azure Databricks, Snowflake, Tableau, ServiceNow]
+
+- title: Standardizing Readmission Rate Logic Across the Organization
+  tags: [Data Governance, CMS Alignment, Stakeholder Alignment]
+  summary: >-
+    Multiple groups were calculating readmission rates different ways, producing
+    numbers that disagreed. Documented every variant, benchmarked them against
+    CMS methodology, and drove the organization to a single agreed definition.
+  sections:
+    - heading: Approach
+      items:
+        - Documented how each group was calculating the readmission rate and where the logic diverged
+        - Compared every variant against CMS methodology to establish an external reference point
+        - Wrote up the findings and differences for the primary business owner
+        - Presented the comparison to the Medical Directors for final review and agreement
+    - heading: Outcome
+      items:
+        - One agreed readmission rate definition, ratified by the Medical Directors
+        - Differences between prior calculations documented rather than left implicit
+        - CMS methodology established as the reference point for future definition questions
+  stack: [CMS Methodology, Snowflake, Tableau]
 
 - title: Enterprise Reporting Consolidation & BI Delivery
   tags: [Business Intelligence, KPI Reporting, Data Governance]
@@ -35,6 +68,7 @@
         - Cross-functional alignment across business, development, and QA teams
     - heading: Outcome
       items:
+        - 50 legacy reports replaced with governed data products
         - 30+ SSRS reports consolidated into two dashboards on one governed data set
         - One source of truth for stakeholders asking the same questions
         - 98% on-time delivery on data warehouse project

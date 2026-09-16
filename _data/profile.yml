@@ -1,10 +1,9 @@
 name: Christan Franklin
 initials: CF
-title: "Lead Technical Product Manager — Data Products, Reporting & Analytics"
+title: "Lead Technical Product Manager — Healthcare Data Products & Analytics"
 headline: "Turning Complex Data Needs into Cloud Products That Drive Decisions"
 location: San Antonio, TX · Remote
 
-# NOTE: your resume uses Christy.franklin@live.com. Pick ONE and use it everywhere.
 email: christanfranklin7@gmail.com
 linkedin: https://www.linkedin.com/in/christan-franklin-cbap-92885723/
 
@@ -12,14 +11,16 @@ linkedin: https://www.linkedin.com/in/christan-franklin-cbap-92885723/
 resume_url: /Portfolio/Christan-Franklin-Resume.pdf
 
 about: >-
-  I own roadmap, backlog, and delivery for enterprise cloud data products on
-  Azure Databricks and Snowflake. At Optum I shipped the Transition of Care
+  I own roadmap, backlog, and delivery for a portfolio of nine enterprise cloud
+  data products on Azure Databricks and Snowflake, serving more than 450
+  subscribers and supported by a team of four. At Optum I shipped the Transition of Care
   dashboard, the first product to move the organization from lagging claims data
   to leading ADT and authorization signals — cutting reporting lag from 45 days
   to 2 and widening coverage from patients with approved claims to all patient
-  visits. I partner with more than twenty stakeholders across business, data
-  warehouse, analytics, and governance teams to turn needs into shipped products.
-  My experience spans healthcare technology, retail, energy, and media.
+  visits. The portfolio serves business teams, Medical Directors, Finance, and IT
+  across Optum, and I apply CMS rules to clinical action tracking while governing
+  PHI and HIPAA handling throughout. My healthcare data work spans HEDIS, Star
+  Ratings, risk adjustment, utilization management, and care management.
 
 seeking: >-
   Open to remote product management roles in healthcare where cloud data strategy
@@ -27,8 +28,8 @@ seeking: >-
 
 value_props:
   - title: Data Product Roadmaps
-    body: Owning roadmap, backlog creation, and prioritization for a portfolio of enterprise data products.
+    body: Owning roadmap, backlog creation, and prioritization across nine enterprise data products.
   - title: Azure Databricks & Snowflake
     body: Leading definition of the enterprise data sets that downstream dashboards and teams are built on.
-  - title: KPI & Dashboard Design
-    body: Defining the KPI frameworks and visualizations leadership uses to track performance and identify trends.
+  - title: Healthcare Data Governance
+    body: CMS rule alignment for clinical action tracking, with PHI and HIPAA handling governed across every product.
