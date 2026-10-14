@@ -6,20 +6,14 @@
 hero:
   - display: '45 <span class="arrow">&rarr;</span> 2 days'
     label: Reporting lag, cut by moving from claims data to ADT and authorization data
-  - display: "$5M"
-    count: 5
-    prefix: "$"
-    suffix: "M"
-    label: Additional transition of care savings, reported by Finance
+  - display: "50 reports"
+    count: 50
+    suffix: " reports"
+    label: Legacy reports replaced with governed data products
   - display: "9 products"
     label: Cloud data products in the portfolio, serving 450+ subscribers
 
 impact:
-  - display: "$5M"
-    count: 5
-    prefix: "$"
-    suffix: "M"
-    label: Additional transition of care savings reported by Finance this year (Optum)
   - display: '45 <span class="arrow">&rarr;</span> 2 days'
     label: Reporting lag, cut by moving from lagging claims data to leading ADT and authorization data (Optum)
   - display: "50 reports"

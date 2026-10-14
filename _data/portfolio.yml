@@ -29,7 +29,6 @@
       items:
         - Reporting lag reduced from 45 days to 2
         - Coverage widened from approved-claim patients only to all patient visits
-        - Finance reports $5M in additional transition of care savings this year
         - Used by business teams, Medical Directors, Finance, and IT across Optum
         - Enterprise data sets now feed at least three additional dashboards across IT and business teams
   stack: [Azure Databricks, Snowflake, Tableau, ServiceNow, Generative AI, GitHub Copilot]
