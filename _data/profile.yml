@@ -21,6 +21,9 @@ about: >-
   across Optum, and I apply CMS rules to clinical action tracking while governing
   PHI and HIPAA handling throughout. My healthcare data work spans HEDIS, Star
   Ratings, risk adjustment, utilization management, and care management.
+  I use generative AI for roadmap and quarterly feature planning, have built
+  agents for story writing and data modeling, and am piloting one that analyzes
+  de-identified transition of care data for readmission patterns.
 
 seeking: >-
   Open to remote product management roles in healthcare where cloud data strategy
@@ -29,7 +32,7 @@ seeking: >-
 value_props:
   - title: Data Product Roadmaps
     body: Owning roadmap, backlog creation, and prioritization across nine enterprise data products.
-  - title: Azure Databricks & Snowflake
-    body: Leading definition of the enterprise data sets that downstream dashboards and teams are built on.
+  - title: Generative AI in Practice
+    body: Using AI for roadmap and quarterly planning, building agents for story writing and data modeling, and analyzing de-identified care data for readmission patterns.
   - title: Healthcare Data Governance
     body: CMS rule alignment for clinical action tracking, with PHI and HIPAA handling governed across every product.

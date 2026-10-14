@@ -18,6 +18,7 @@
         - Defined source data needs, cloud data set design, reporting logic, and acceptance criteria
         - Led the team defining the enterprise data sets underneath the product
         - Coordinated delivery across business, data warehouse, analytics, and governance teams
+        - Piloting a generative AI agent that analyzes de-identified transition of care data for patterns that could improve outcomes and reduce readmissions
     - heading: The Tradeoff
       items:
         - Chose not to blend claims data into the lead-indicator product, despite claims being the established source
@@ -31,7 +32,7 @@
         - Finance reports $5M in additional transition of care savings this year
         - Used by business teams, Medical Directors, Finance, and IT across Optum
         - Enterprise data sets now feed at least three additional dashboards across IT and business teams
-  stack: [Azure Databricks, Snowflake, Tableau, ServiceNow]
+  stack: [Azure Databricks, Snowflake, Tableau, ServiceNow, Generative AI, GitHub Copilot]
 
 - title: Standardizing Readmission Rate Logic Across the Organization
   tags: [Data Governance, CMS Alignment, Stakeholder Alignment]
